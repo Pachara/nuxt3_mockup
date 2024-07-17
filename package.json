@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "git add . && git commit -am 'make it better' && git push origin main",
+    "deploy": "git add . && git commit -am 'make it better' && git push origin main"
   },
   "dependencies": {
     "boosted": "5.3.3",
