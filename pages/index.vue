@@ -17,7 +17,7 @@ const refreshImages = () => refresh();
 <template>
     <div class="page-container p-1">
         <div class="content-wrapper">
-            <div class="responsive-box bg-carpluz-light rounded-2" style="border: 1px solid #ccc;">
+            <div class="responsive-box bg-carpluz-light rounded-3" style="border: 2px solid #555;">
                 <div class="w-100 h-100">
                     <div class="row">
                         <div class="c1 col-lg-4 col-6 mb-2 order-1 order-lg-1">
@@ -78,7 +78,7 @@ const refreshImages = () => refresh();
 }
 
 .main_logo {
-    width: 300px;
+    width: 350px;
 }
 
 .stat{
