@@ -17,7 +17,8 @@
     "sass-loader": "^10.5.2",
     "vite": "^5.3.4",
     "vite-plugin-vue-inspector": "^5.1.2",
-    "vue": "latest"
+    "vue": "latest",
+    "vue3-marquee-slider": "^1.0.5"
   },
   "devDependencies": {
     "sass": "^1.77.8"

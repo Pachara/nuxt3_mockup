@@ -2,17 +2,38 @@
 definePageMeta({
     layout: 'main',
 });
+
+const { data: randomImages, status, refresh } = await useAsyncData('randomImages', async () => {
+    const response = await fetch('https://randomuser.me/api/?results=15');
+    const data = await response.json();
+    return data.results.map(user => user.picture.thumbnail);
+});
+
+const refreshImages = () => refresh();
+
+
 </script>
 
 <template>
     <div class="page-container p-1">
         <div class="content-wrapper">
-                <div class="responsive-box bg-carpluz-light rounded-2" style=" border: 1px solid #ccc;">
-                    <div class="w-100 h-100">
-                                 <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
+            <div class="responsive-box bg-carpluz-light rounded-2" style="border: 1px solid #ccc;">
+                <div class="w-100 h-100">
+                    <div class="row custom-row">
+                        <div class="c1 col-lg-3 col-6 mb-2">
+                            <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
+                        </div>
+                        <div class="c2 col-lg-3 col-6 mb-2 d-flex align-items-center justify-content-center fw-bold">
+                          
+                        </div>
+                        <div class="c3 col-lg-6 col-12  d-flex align-items-center justify-content-start">
+                            <Marquee :images="randomImages"/>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </template>
 
@@ -32,6 +53,7 @@ definePageMeta({
     height: 100%;
     max-height: 697px;
     display: flex;
+    flex-direction: column;
 }
 
 .responsive-box {
@@ -39,7 +61,6 @@ definePageMeta({
     display: flex;
     align-items: center;
     justify-content: center;
-   
     padding: 0.5rem;
     box-sizing: border-box;
 }
@@ -50,6 +71,32 @@ definePageMeta({
 
 .main_logo {
     width: 300px;
+}
+
+.c1 {
+    order: 1;
+}
+
+.c2 {
+    order: 3;
+}
+
+.c3 {
+    order: 2;
+}
+
+@media (max-width: 991px) {
+    .c1 {
+        order: 1;
+    }
+
+    .c2 {
+        order: 2;
+    }
+
+    .c3 {
+        order: 3;
+    }
 }
 
 @media (max-width: 768px) {
@@ -65,11 +112,30 @@ definePageMeta({
     .main_logo {
         width: 200px;
     }
+
+    .user-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .img1 {
+        margin-right: 2px;
+    }
 }
 
 @media (max-width: 480px) {
     .main_logo {
         width: 200px;
     }
+
+    .user-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .img1 {
+        margin-right: 1px;
+    }
 }
+
 </style>
