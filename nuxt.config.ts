@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   css: [
-    '@/assets/scss/main.scss'
+    '@/assets/css/main.css',
+    '@/assets/css/custom.css',
+    '@/assets/scss/main.scss',
+    '@/assets/css/blobz.min.css'
   ],
 
   modules: ["@nuxt/image"]
