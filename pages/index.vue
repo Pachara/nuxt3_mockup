@@ -19,16 +19,15 @@ const refreshImages = () => refresh();
         <div class="content-wrapper">
             <div class="responsive-box bg-carpluz-light rounded-2" style="border: 1px solid #ccc;">
                 <div class="w-100 h-100">
-                    <div class="row custom-row">
-                        <div class="c1 col-lg-3 col-6 mb-2">
+                    <div class="row">
+                        <div class="c1 col-lg-3 col-6 mb-2 order-1 order-lg-1">
                             <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
                         </div>
-                        <div class="c2 col-lg-3 col-6 mb-2 d-flex align-items-center justify-content-center fw-bold">
+                        <div class="c2 col-lg-3 col-6 mb-2 d-flex align-items-center justify-content-center fw-bold order-2 order-lg-3">
                           
                         </div>
-                        <div class="c3 col-lg-6 col-12  d-flex align-items-center justify-content-start">
+                        <div class="c3 col-lg-6 col-12 d-flex align-items-center justify-content-start order-3 order-lg-2">
                             <Marquee :images="randomImages"/>
-                        
                         </div>
                     </div>
                 </div>
@@ -73,31 +72,9 @@ const refreshImages = () => refresh();
     width: 300px;
 }
 
-.c1 {
-    order: 1;
-}
 
-.c2 {
-    order: 3;
-}
 
-.c3 {
-    order: 2;
-}
 
-@media (max-width: 991px) {
-    .c1 {
-        order: 1;
-    }
-
-    .c2 {
-        order: 2;
-    }
-
-    .c3 {
-        order: 3;
-    }
-}
 
 @media (max-width: 768px) {
     .page-container {
@@ -113,28 +90,11 @@ const refreshImages = () => refresh();
         width: 200px;
     }
 
-    .user-image {
-        width: 40px;
-        height: 40px;
-    }
-
-    .img1 {
-        margin-right: 2px;
-    }
 }
 
 @media (max-width: 480px) {
     .main_logo {
         width: 200px;
-    }
-
-    .user-image {
-        width: 30px;
-        height: 30px;
-    }
-
-    .img1 {
-        margin-right: 1px;
     }
 }
 
