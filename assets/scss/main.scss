@@ -1,1 +1,13 @@
+$font-family-base: 'Kanit', sans-serif;
+$font-weight-light:           200 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            600 !default;
+
+@import "boosted/scss/_functions";
+@import "boosted/scss/_variables";
 @import "boosted/scss/boosted";
+
+.fw-bold {
+    letter-spacing: 0.8px;
+  }
+

@@ -10,5 +10,13 @@ export default defineNuxtConfig({
     '@/assets/css/blobz.min.css'
   ],
 
-  modules: ["@nuxt/image"]
+  modules: ["@nuxt/image", "@nuxtjs/google-fonts"],
+  googleFonts: {
+    families: {
+      Kanit: [100, 200, 300, 400, 500, 600, 700, 800, 900]  // Include all necessary weights
+    },
+    download: false,  // Use fonts from CDN
+    inject: true,
+    display: 'swap'
+  }
 })
