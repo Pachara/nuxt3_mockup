@@ -19,6 +19,7 @@ const refreshImages = () => refresh();
         <div class="row w-100 h-100 max-w-1240 content-wrapper">
             <div class="col-12 media-container bg-carpluz-light rounded-3" style="border: 2px solid #555;">
                 <div class="d-flex flex-column h-100">
+
                     <div class="row">
                         <div class="col-lg-4 col-6 mb-2 order-1 order-lg-1">
                             <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
@@ -29,35 +30,51 @@ const refreshImages = () => refresh();
                             <Marquee :images="randomImages"/>
                         </div>
                     </div>
+                    
                     <div class="row flex-grow-1">
-                        <div class="col-lg-6 col-12 p-3 d-flex align-items-start order-2 order-lg-1">
-                            <div class="pb-5">
-                                <h1 class="fw-bold" style="font-size:3em;line-height:60px;">บริการรถยนต์ให้เช่า <br/>ระดับพรีเมี่ยม</h1>
-                                <p>รถเช่านครศรีธรรมราช</p>
-                                <p class="fw-light" style="font-size:1.3em;line-height:30px;">ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ ไว้คอยให้บริการ โปรดสอบถามข้อมูลที่คอลเซ็นเตอร์</p>
+                        <div class="col-lg-6 col-12 p-3 pt-2 d-flex align-items-start  pe-3">
+                            <div >
+                                <div class="row">
+                                    <div class="col-12 p-1 order-1 order-lg-2">
+                                        <div class="border rounded-3" style="height:230px;"></div>
+                                    </div>
+                                    <div class="col-12 mt-2 order-2 order-lg-1">
+                                        <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น <br/>จังหวัดนครศรีธรรมราช</h1>
+                                        <p class="keyword-media">รถเช่านครศรีธรรมราช</p>
+                                        <p class="content-media fw-light" >ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12 p-3 d-flex flex-column order-1 order-lg-2">
-                            <div class="row flex-grow-1">
+                        <div class="col-lg-6 col-12 p-3 pt-2 d-flex flex-column  ps-2">
+                            <div class="row  order-2 order-lg-2">
                                 <div class="col-12 p-1">
-                                    <div class="border h-100 rounded-3 ">&nbsp;</div>
+                                    <div class="border rounded-3" style="height:230px;">&nbsp;</div>
                                 </div>
                                 <div class="col-6 p-1">
-                                    <div class="border h-100 rounded-3">&nbsp;</div>
+                                    <div class="border  rounded-3" style="height:250px;">&nbsp;</div>
                                 </div>
                                 <div class="col-6 p-1">
-                                    <div class="border h-100 rounded-3">&nbsp;</div>
+                                    <div class="border  rounded-3" style="height:250px;">&nbsp;</div>
                                 </div>
                             </div>
                         </div>
+                     
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
 <style scoped>
+.h1-media{
+    font-size:2.5em;
+    line-height:45px;
+}
+.content-media{
+    font-size:1.3em;
+    line-height:30px;
+}
 .bg-carpluz-light {
     background: #F1EFE7 !important;
 }
@@ -101,8 +118,17 @@ const refreshImages = () => refresh();
 }
 
 @media (max-width: 480px) {
+    .h1-media{
+    font-size:1.8em;
+    line-height:35px;
+}
+.content-media{
+    font-size:1.2em;
+    line-height:25px;
+}
     .main_logo {
         width: 220px;
     }
+
 }
 </style>
