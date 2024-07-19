@@ -32,34 +32,31 @@ const refreshImages = () => refresh();
                     </div>
                     
                     <div class="row flex-grow-1">
-                        <div class="col-lg-6 col-12 p-3 pt-2 d-flex align-items-start  pe-3">
-                            <div >
-                                <div class="row">
-                                    <div class="col-12 p-1 order-1 order-lg-2">
-                                        <div class="border rounded-3" style="height:230px;"></div>
-                                    </div>
-                                    <div class="col-12 mt-2 order-2 order-lg-1">
-                                        <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น <br/>จังหวัดนครศรีธรรมราช</h1>
-                                        <p class="keyword-media">รถเช่านครศรีธรรมราช</p>
-                                        <p class="content-media fw-light" >ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ</p>
-                                    </div>
-                                </div>
+                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-2">
+                            <div class=" rounded-3 w-100 p-3 " >
+                            <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น <br/>จังหวัดนครศรีธรรมราช</h1>
+                            <p class="keyword-media fw-light">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                            <p class="content-media fw-light" >ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12 p-3 pt-2 d-flex flex-column  ps-2">
-                            <div class="row  order-2 order-lg-2">
-                                <div class="col-12 p-1">
-                                    <div class="border rounded-3" style="height:230px;">&nbsp;</div>
+                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-3 ">
+                            <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
+                        </div>
+                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-1" >
+                            <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
+                        </div>
+                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
                                 </div>
-                                <div class="col-6 p-1">
-                                    <div class="border  rounded-3" style="height:250px;">&nbsp;</div>
-                                </div>
-                                <div class="col-6 p-1">
-                                    <div class="border  rounded-3" style="height:250px;">&nbsp;</div>
+                                <div class="col-6">
+                                    <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
                                 </div>
                             </div>
+                            
                         </div>
-                     
+                      
                     </div>
                 </div>
             </div>
@@ -68,8 +65,8 @@ const refreshImages = () => refresh();
 </template>
 <style scoped>
 .h1-media{
-    font-size:2.5em;
-    line-height:45px;
+    font-size:2.3em;
+    line-height:40px;
 }
 .content-media{
     font-size:1.3em;
@@ -92,7 +89,7 @@ const refreshImages = () => refresh();
     height: 100%;
 }
 .media-container{
-    padding:15px;
+    padding:18px;
 }
 
 @media (max-width: 768px) {
