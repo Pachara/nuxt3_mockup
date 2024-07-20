@@ -27,7 +27,7 @@ const refreshImages = () => refresh();
                         <div class="col-lg-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-lg-3 fw-normal">
                         </div>
                         <div class="col-lg-5 col-12 ps-2 pe-2 d-flex align-items-center justify-content-start order-3 order-lg-2">
-                            <Marquee :images="randomImages"/>
+                            <Marquee :images="randomImages" />
                         </div>
                     </div>
                     
@@ -44,9 +44,17 @@ const refreshImages = () => refresh();
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-1" >
                             <div class="bg-white rounded-3 w-100 p-0 d-flex overflow-hidden" style="height:250px;">
-                                <nuxt-img src="/images/slideshow/1.JPG" height="250px"/>
-                                <nuxt-img src="/images/slideshow/2.JPG" height="250px"/>
-                                <nuxt-img src="/images/slideshow/3.JPG" height="250px"/>
+                                <Slideshow :images="[
+      '/images/slideshow/1.JPG',
+      '/images/slideshow/2.JPG',
+      '/images/slideshow/3.JPG',
+      '/images/slideshow/4.JPG',
+      '/images/slideshow/5.JPG',
+      '/images/slideshow/6.JPG',
+      '/images/slideshow/7.JPG',
+      '/images/slideshow/8.JPG',
+      '/images/slideshow/9.JPG'
+    ]"/>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-4">

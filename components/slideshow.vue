@@ -3,29 +3,29 @@ import { computed } from 'vue';
 
 const props = defineProps({
   images: Array,
-  responsive: Boolean,
 });
 
 // Duplicate images to ensure smooth transition
 const duplicatedImages = computed(() => [...props.images, ...props.images]);
 
-// Compute image style based on responsive prop
-const imageStyle = computed(() => {
-  return props.responsive ? { height: '100%' } : { width: '35px', height: '35px' };
-});
+// Always set the image height to 100% of the parent container
+const imageStyle = { height: '100%', width: 'auto' };
 </script>
 
 
 
+
+
 <template>
-  <div class="marquee-container rounded-5 border" style="border:1px solid #ddd !important">
+  <div class="marquee-container">
     <div class="marquee">
       <div v-for="(image, i) in duplicatedImages" :key="i" class="img1">
-        <nuxt-img :src="image" :style="imageStyle" class="rounded-circle border user-image" />
+        <nuxt-img :src="image" :style="imageStyle" class="user-image" />
       </div>
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .marquee-container {
@@ -33,11 +33,12 @@ const imageStyle = computed(() => {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  height: 100%; /* Ensure the container inherits height from the parent */
 }
 
 .marquee {
   display: inline-block;
-  animation: marquee-pingpong 20s linear infinite;
+  animation: marquee-pingpong 100s linear infinite;
 }
 
 @keyframes marquee-pingpong {
@@ -56,39 +57,19 @@ const imageStyle = computed(() => {
 .user-image {
   object-fit: cover;
   transition: transform 0.3s ease;
+  height: 250px !important;
+  width: auto; /* Maintain aspect ratio */
 }
 
-.user-image:hover {
-  transform: scale(1.2);
-}
+
 
 @media (max-width: 768px) {
-  .user-image {
-    width: 40px;
-    height: 40px;
-  }
-
-  .user-image.responsive {
-    height: 100%;
-    width: auto; /* Maintain aspect ratio */
-  }
-
   .img1 {
     margin-right: 2px;
   }
 }
 
 @media (max-width: 480px) {
-  .user-image {
-    width: 30px;
-    height: 30px;
-  }
-
-  .user-image.responsive {
-    height: 100%;
-    width: auto; /* Maintain aspect ratio */
-  }
-
   .img1 {
     margin-right: 1px;
   }
