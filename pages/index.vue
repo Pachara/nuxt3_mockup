@@ -43,7 +43,11 @@ const refreshImages = () => refresh();
                             <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-1" >
-                            <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
+                            <div class="bg-white rounded-3 w-100 p-0 d-flex overflow-hidden" style="height:250px;">
+                                <nuxt-img src="/images/slideshow/1.JPG" height="250px"/>
+                                <nuxt-img src="/images/slideshow/2.JPG" height="250px"/>
+                                <nuxt-img src="/images/slideshow/3.JPG" height="250px"/>
+                            </div>
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-4">
                             <div class="row">
