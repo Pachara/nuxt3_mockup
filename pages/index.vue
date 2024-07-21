@@ -34,7 +34,7 @@ const refreshImages = () => refresh();
                     <div class="row flex-grow-1">
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-2">
                             <div class=" rounded-3 w-100 p-3 " >
-                            <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น <br/>จังหวัดนครศรีธรรมราช</h1>
+                            <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น</h1>
                             <p class="keyword-media fw-light">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
                             <p class="content-media fw-light" >ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ</p>
                             </div>
