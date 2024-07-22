@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@/assets/css/main.css',
     '@/assets/css/custom.css',
     '@/assets/scss/main.scss',
-    '@/assets/css/blobz.min.css'
+    '@/assets/css/blobz.min.css',
+    '@splidejs/splide/css'
   ],
 
   modules: ["@nuxt/image", "@nuxtjs/google-fonts"],

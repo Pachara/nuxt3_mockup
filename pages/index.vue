@@ -12,6 +12,38 @@ const { data: randomImages, status, refresh } = await useAsyncData('randomImages
 const refreshImages = () => refresh();
 
 
+const splide = ref(null);
+const images = ref([
+    '/images/slideshow/1.JPG',
+    '/images/slideshow/2.JPG',
+    '/images/slideshow/3.JPG',
+    '/images/slideshow/4.JPG',
+    '/images/slideshow/5.JPG',
+    '/images/slideshow/6.JPG',
+    '/images/slideshow/7.JPG',
+    '/images/slideshow/8.JPG',
+    '/images/slideshow/9.JPG'
+]);
+
+onMounted(() => {
+  const { $Splide, $AutoScroll } = useNuxtApp();
+  const splideInstance = new $Splide(splide.value, {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    perPage: 3,
+    autoWidth: true,  // Enable autoWidth
+    autoScroll: {
+      speed: 1,
+    },
+    arrows: false,        // Disable arrows
+    pagination: false,    // Disable pagination
+  });
+
+  splideInstance.mount({ AutoScroll: $AutoScroll });
+});
+
+
 </script>
 
 <template>
@@ -33,7 +65,12 @@ const refreshImages = () => refresh();
                     
                     <div class="row flex-grow-1">
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-2">
-                            <div class=" rounded-3 w-100 p-3 " >
+                            <div class="rounded-3 w-100 p-3 " >
+                            <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
+                            <span class="badge rounded-pill text-bg-warning me-1 d-flex " 
+                            style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
+                            Premium Provider</span>
+                            </p>
                             <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น</h1>
                             <p class="keyword-media fw-light">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
                             <p class="content-media fw-light" >ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ</p>
@@ -44,23 +81,24 @@ const refreshImages = () => refresh();
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-1" >
                             <div class="bg-white rounded-3 w-100 p-0 d-flex overflow-hidden" style="height:250px;">
-                                <Slideshow :images="[
-      '/images/slideshow/1.JPG',
-      '/images/slideshow/2.JPG',
-      '/images/slideshow/3.JPG',
-      '/images/slideshow/4.JPG',
-      '/images/slideshow/5.JPG',
-      '/images/slideshow/6.JPG',
-      '/images/slideshow/7.JPG',
-      '/images/slideshow/8.JPG',
-      '/images/slideshow/9.JPG'
-    ]"/>
+                                <div class="splide h-100" ref="splide">
+                                    <div class="splide__track h-100">
+                                        <ul class="splide__list h-100">
+                                            <li v-for="image in images" :key="image" class="splide__slide ">
+                                                <nuxt-img :src="image" alt="Slide Image" height="250px" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-4">
                             <div class="row">
                                 <div class="col-6">
-                                    <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
+                                    <div class="border rounded-3 w-100" style="height:250px;"> 
+                                      
+
+                                    </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
@@ -140,4 +178,19 @@ const refreshImages = () => refresh();
     }
 
 }
+
+
+
+.splide {
+  width: 100%;
+  margin: auto;
+}
+.splide__slide {
+  background: white;
+  text-align: center;
+}
+
+
+
+
 </style>
