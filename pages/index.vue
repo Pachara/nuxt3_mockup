@@ -64,28 +64,22 @@ onMounted(() => {
                     </div>
                     
                     <div class="row flex-grow-1">
-                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-2">
-                            <div class="rounded-3 w-100 p-3 position-relative" >
-                            <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
-                            <span class="badge rounded-pill text-bg-warning me-1 d-flex " 
-                            style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
-                            Premium Provider</span>
-                            </p>
-                            <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น</h1>
-                            <p class="keyword-media fw-light">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
-                            <p class="content-media fw-light" >
-                                <button class="d-block rounded-circle border" style="width:50px;height:50px;float:right"><i class="bi bi-search fs-3"></i></button>
-
+                        <div class="col-lg-6 col-12 p-2">
+                            <div class="d-flex flex-column">
+                            <div class="rounded-3 w-100 p-3 position-relative  order-lg-1 order-2" >
+                                    <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
+                                        <span class="badge rounded-pill text-bg-warning me-2 d-flex " 
+                                        style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
+                                        Premium Provider</span>
+                                    </p>
+                                    <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น </h1>
+                              
+                            <p class="keyword-media fw-light mt-2">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                            <p class="content-media fw-light m-0 p-0" >
                                 ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ
                             </p>
-                          
-                        </div>
-                        </div>
-                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-3 ">
-                            <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
-                        </div>
-                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-1" >
-                            <div class="bg-white rounded-3 w-100 p-0 d-flex overflow-hidden" style="height:250px;">
+                            </div>
+                            <div class="rounded-3 w-100 ps-2 pe-2 d-flex overflow-hidden order-lg-2 order-1" style="height:250px;">
                                 <div class="splide h-100" ref="splide">
                                     <div class="splide__track h-100">
                                         <ul class="splide__list h-100">
@@ -96,21 +90,31 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-12 p-2 order-lg-1 order-4">
-                            <div class="row">
+                    
+                        
+                        <div class="col-lg-6 col-12 p-2  pt-0" >
+                          <div class="h-100 p-2 ps-3 pe-3">
+                            <div class="row border p-1 pb-2 rounded-3 border-light bg-light ps-0 pe-0" style="font-size:0.9em;">
                                 <div class="col-6">
-                                    <div class="border rounded-3 w-100" style="height:250px;"> 
-                                      
-
+                                    <span  style="padding-left:2px;">รับรถที่จังหวัด</span>
+                                    <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">
+                                        นครศรีธรรมราช
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
+                                <div class="col-3">
+                                    <span style="padding-left:2px;">วันที่รับรถ</span>
+                                    <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">14 ม.ย.</div>
+                                </div>
+                                <div class="col-3">
+                                    <span style="padding-left:2px;">วันที่คืนรถ</span>
+                                    <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">18 ม.ย.</div>
                                 </div>
                             </div>
-                            
+                          </div>
                         </div>
+                    
                       
                     </div>
                 </div>

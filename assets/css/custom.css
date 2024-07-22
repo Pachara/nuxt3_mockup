@@ -1,3 +1,6 @@
+.text-smaller{
+    font-size:0.8em !important
+}
 .text-000 { color: #000 !important; }
 .text-111 { color: #111 !important; }
 .text-222 { color: #222 !important; }
