@@ -47,9 +47,9 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="container-fluid d-flex align-items-center justify-content-center vh-100 p-1">
+    <div class="container-fluid main-container d-flex align-items-center justify-content-center vh-100 p-1 ">
         <div class="row w-100 h-100 max-w-1240 content-wrapper">
-            <div class="col-12 media-container bg-carpluz-light rounded-3" style="border: 2px solid #555;">
+            <div class="col-12 media-container bg-carpluz-light rounded-3">
                 <div class="d-flex flex-column h-100">
 
                     <div class="row">
@@ -81,14 +81,19 @@ onMounted(() => {
                                         Premium Provider</span>
                                     </p>
                                     <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น </h1>
-                                    <p class="keyword-media fw-light mt-2">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                                    <p class="keyword-media fw-light mb-1">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                                    <p class="text-bigger fs-5 d-flex">
+                                        <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-info text-white"><i class="bi bi-facebook"></i> <span class="fs-5 ps-1 pe-1">1,200 Likes </span></span>
+                                        <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-ddd"><i class="bi bi-instagram"></i> <span class="fs-5 ps-1 pe-1">1.5K Follows </span></span>
+                                    </p>
                                 </div>
                          
                             <p class="content-media fw-light m-0 pt-0" >
                                 ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ
+                                มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
                             </p>
                             </div>
-                            <div class="rounded-3 w-100 ps-2 pe-2 d-flex overflow-hidden order-lg-2 order-1" style="height:220px;">
+                            <div class="rounded-4 w-100 ps-2 pe-2 d-flex overflow-hidden order-lg-2 order-1" style="height:220px;">
                                 <div class="splide h-100" ref="splide">
                                     <div class="splide__track h-100">
                                         <ul class="splide__list h-100">
@@ -101,55 +106,74 @@ onMounted(() => {
                             </div>
                             </div>
                         </div>
-                    
                         
-                        <div class="col-lg-6 car-zone col-12 p-0 pt-0" >
-                          <div class="h-100 p-2 ps-3 pe-3">
-                            <div class="car-select-box row border p-1 pb-2 rounded-3 border-light bg-light ps-0 pe-0 " style="font-size:0.9em;">
-                                <div class="col-12 pb-2 text-bigger text-center" style="border-bottom:1px solid #ddd">ONLINE BOOKING "เช่ารถ เรื่องง่าย"</div>
-                                <div class="col-6 pt-1">
-                                    <span  style="padding-left:2px;">รับรถที่จังหวัด</span>
-                                    <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">
+                        <div class="col-lg-6 car-zone col-12" >
+                          <div class="h-100 p-2 ps-3 pe-3 pt-0">
+                            <div class="car-select-box row  p-0  rounded-3 ps-0 pe-0 overflow-hidden bg-eee" style="font-size:0.9em;">
+                                <div class="col-12 p-1 text-bigger text-center bg-light fw-bold" style="border-bottom:1px solid #ddd">
+                                    REALTIME ONLINE BOOKING 
+                                </div>
+                                <div class="col-12 bg-light p-2">
+                                    <div class="row">
+                                        <div class="col-6">
+                                    <span  style="padding-left:2px;"><i class="bi bi-geo-alt-fill"></i> รับรถที่จังหวัด</span>
+                                    <div class="border rounded-3 p-2 bg-dark text-primary " style="margin-top:2px;">
                                         นครศรีธรรมราช
                                     </div>
                                 </div>
-                                <div class="col-3 pt-1">
-                                    <span style="padding-left:2px;">วันที่รับรถ</span>
-                                    <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">14 ม.ย.</div>
+                                <div class="col-3">
+                                    <span style="padding-left:2px;"><i class="bi bi-calendar3"></i> รับรถ</span>
+                                    <div class="border rounded-3 p-2 bg-dark text-primary " style="margin-top:2px;">14 ม.ย.</div>
                                 </div>
-                                <div class="col-3 pt-1">
-                                    <span style="padding-left:2px;">วันที่คืนรถ</span>
+                                <div class="col-3">
+                                    <span style="padding-left:2px;"><i class="bi bi-calendar3"></i> คืนรถ</span>
                                     <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">18 ม.ย.</div>
                                 </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 p-2">
+                                <div class="car-zone-box row">
+                                    <div class="col-12 fs-3 mb-1">
+                                        ราคาสำหรับเช่า 2 วัน
+                                    </div>
+                                    <div class="col-lg-4 col-6 p-0">
+                                        <div class=" rounded-3"> 
+                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  col-6 p-0">
+                                        <div class=" rounded-3"> 
+                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  col-6 p-0">
+                                        <div class=" rounded-3"> 
+                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6 p-0">
+                                        <div class=" rounded-3"> 
+                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  col-6 p-0">
+                                        <div class=" rounded-3"> 
+                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  col-6 p-0">
+                                        <div class=" rounded-3"> 
+                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                        </div>
+                                    </div>
+
+                            </div>
+                                </div>
+                               
+                                
                             </div>
 
-                            <div class="car-zone-box row mt-2">
-                                <div class="col-6 ps-0">
-                                    <div class=" rounded-3"> 
-                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                    </div>
-                                </div>
-                                <div class="col-6 pe-0">
-                                    <div class=" rounded-3"> 
-                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-6 p-0">
-                                    <div class=" rounded-3"> 
-                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4  col-6 p-0">
-                                    <div class=" rounded-3"> 
-                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4  col-6 p-0">
-                                    <div class=" rounded-3"> 
-                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                    </div>
-                                </div>
-                            </div>
+                          
 
 
                           </div>
@@ -189,6 +213,7 @@ onMounted(() => {
 }
 .media-container{
     padding:18px;
+    border: 2px solid #555;
 }
 .car-zone{
     padding-left:30px !important;
@@ -197,6 +222,12 @@ onMounted(() => {
 .contact-box-menu{
     padding-right:25px;
 }
+.car-zone-box{
+        padding:10px;
+    }
+    .car-select-box{
+        border:1px solid #333
+    }
 
 
 @media (max-width: 768px) {
@@ -207,6 +238,7 @@ onMounted(() => {
         align-items: flex-start;
         padding: 0;
     }
+
     .content-wrapper {
         height: 83.5vh;
     }
@@ -236,10 +268,12 @@ onMounted(() => {
 }
 
 @media (max-width: 480px) {
+
     .h1-media{
     font-size:1.8em;
     line-height:35px;
 }
+
 .content-media{
     font-size:1.2em;
     line-height:25px;
