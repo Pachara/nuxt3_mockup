@@ -94,9 +94,9 @@ onMounted(() => {
                         </div>
                     
                         
-                        <div class="col-lg-6 col-12 p-2  pt-0" >
+                        <div class="col-lg-6 col-12 p-0 pt-0" >
                           <div class="h-100 p-2 ps-3 pe-3">
-                            <div class="row border p-1 pb-2 rounded-3 border-light bg-light ps-0 pe-0" style="font-size:0.9em;">
+                            <div class="car-select-box row border p-1 pb-2 rounded-3 border-light bg-light ps-0 pe-0 " style="font-size:0.9em;">
                                 <div class="col-6">
                                     <span  style="padding-left:2px;">รับรถที่จังหวัด</span>
                                     <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">
@@ -113,7 +113,7 @@ onMounted(() => {
                                 </div>
                             </div>
 
-                            <div class="row mt-2">
+                            <div class="car-zone-box row mt-2">
                                 <div class="col-6 ps-0">
                                     <div class=" rounded-3"> 
                                         <nuxt-img src="images/car/car1.png" class="w-100"/>
@@ -125,17 +125,17 @@ onMounted(() => {
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-6 p-0">
-                                    <div class=" rounded-3 p-1"> 
+                                    <div class=" rounded-3"> 
                                         <nuxt-img src="images/car/car1.png" class="w-100"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-4  col-6 p-0">
-                                    <div class=" rounded-3 p-1"> 
+                                    <div class=" rounded-3"> 
                                         <nuxt-img src="images/car/car1.png" class="w-100"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-4  col-6 p-0">
-                                    <div class=" rounded-3 p-1"> 
+                                    <div class=" rounded-3"> 
                                         <nuxt-img src="images/car/car1.png" class="w-100"/>
                                     </div>
                                 </div>
@@ -180,7 +180,14 @@ onMounted(() => {
 .media-container{
     padding:18px;
 }
-
+.car-select-box{
+    margin-left:20px;
+    margin-right:20px;
+}
+.car-zone-box{
+    padding-left:20px;
+    padding-right:20px;
+}
 @media (max-width: 768px) {
     .main_logo {
         width: 220px;
@@ -201,6 +208,12 @@ onMounted(() => {
     .media-container{
         padding:5px;
     }
+    .car-zone-box{
+        padding:0;
+    }
+    .car-select-box{
+        margin :0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -214,6 +227,12 @@ onMounted(() => {
 }
     .main_logo {
         width: 220px;
+    }
+    .car-zone-box{
+        padding:0;
+    }
+    .car-select-box{
+        margin :0;
     }
 
 }
