@@ -57,6 +57,13 @@ onMounted(() => {
                             <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
                         </div>
                         <div class="col-lg-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-lg-3 fw-normal">
+                            <div class="contact-box-menu d-flex justify-content-end w-100 h-100 align-items-center">
+                               <button class="rounded-circle bg-warning text-dark me-1" style="width:40px;height:40px;">
+                                <i class="bi bi-telephone-fill fs-4"></i>
+                               </button>
+                                <i class="bi bi-line text-success"  style="font-size:2.6em;margin-top:4px;"></i>
+                            </div>
+                            
                         </div>
                         <div class="col-lg-5 col-12 ps-2 pe-2 d-flex align-items-center justify-content-start order-3 order-lg-2">
                             <Marquee :images="randomImages" />
@@ -74,29 +81,9 @@ onMounted(() => {
                                         Premium Provider</span>
                                     </p>
                                     <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น </h1>
-                                    <p class="keyword-media fw-light">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                                    <p class="keyword-media fw-light mt-2">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
                                 </div>
-                            <div class="contact-box row mb-2">
-                              <div class="col-lg-6 col-12 p-1">
-                                <div class="border p-2 rounded-5 position-relative bg-primary  d-flex align-items-center">
-                                    <i class="bi bi-telephone-fill fs-3 ps-2 pe-2"></i>
-                                     <div class="d-flex flex-column">
-                                        <span class="text-smaller fw-light">โทรหาผู้ช่วยจอง รับสาย 24/7</span>
-                                        <span class="call-number text-dark">088-828-2899</span>
-                                     </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-12 p-1">
-                                <div class="border p-2 rounded-5 position-relative bg-success  d-flex align-items-center">
-                                    <i class="bi bi-line fs-3 ps-2 pe-2"></i>
-                                     <div class="d-flex flex-column">
-                                        <span class="text-smaller fw-light">สอบถามผ่านไลน์ ตอบเร็วจองไว</span>
-                                        <span class="line-id text-dark">@CARPLUZ</span>
-                                     </div>
-                                </div>
-                              </div>
-                           
-                            </div>
+                         
                             <p class="content-media fw-light m-0 pt-0" >
                                 ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ
                             </p>
@@ -206,6 +193,9 @@ onMounted(() => {
     padding-left:30px !important;
     padding-right:30px !important;
 }
+.contact-box-menu{
+    padding-right:25px;
+}
 
 
 @media (max-width: 768px) {
@@ -237,6 +227,9 @@ onMounted(() => {
     .car-select-box{
         margin :0 !important;
     }
+    .contact-box-menu{
+        padding:0;
+    }
 
 
 }
@@ -261,6 +254,9 @@ onMounted(() => {
     }
     .car-select-box{
         margin :0;
+    }
+    .contact-box-menu{
+        padding:0;
     }
 
 
