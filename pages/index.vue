@@ -112,6 +112,21 @@ onMounted(() => {
                                     <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">18 ม.ย.</div>
                                 </div>
                             </div>
+
+                            <div class="row mt-2">
+                                <div class="col-6">
+                                    <div class="border rounded-3"> 
+                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="border rounded-3"> 
+                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+
+
                           </div>
                         </div>
                     
