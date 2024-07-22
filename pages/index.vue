@@ -106,17 +106,18 @@ onMounted(() => {
                         <div class="col-lg-6 car-zone col-12 p-0 pt-0" >
                           <div class="h-100 p-2 ps-3 pe-3">
                             <div class="car-select-box row border p-1 pb-2 rounded-3 border-light bg-light ps-0 pe-0 " style="font-size:0.9em;">
-                                <div class="col-6">
+                                <div class="col-12 pb-2 text-bigger text-center" style="border-bottom:1px solid #ddd">ONLINE BOOKING "เช่ารถ เรื่องง่าย"</div>
+                                <div class="col-6 pt-1">
                                     <span  style="padding-left:2px;">รับรถที่จังหวัด</span>
                                     <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">
                                         นครศรีธรรมราช
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 pt-1">
                                     <span style="padding-left:2px;">วันที่รับรถ</span>
                                     <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">14 ม.ย.</div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 pt-1">
                                     <span style="padding-left:2px;">วันที่คืนรถ</span>
                                     <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">18 ม.ย.</div>
                                 </div>
