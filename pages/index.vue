@@ -66,15 +66,16 @@ onMounted(() => {
                     <div class="row flex-grow-1">
                         <div class="col-lg-6 col-12 p-2">
                             <div class="d-flex flex-column">
-                            <div class="rounded-3 w-100 p-3 position-relative  order-lg-1 order-2" >
+                            <div class="rounded-3 w-100 p-0 position-relative  order-lg-1 order-2" >
+                                <div class="p-3 pb-0">
                                     <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
                                         <span class="badge rounded-pill text-bg-warning me-2 d-flex " 
                                         style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
                                         Premium Provider</span>
                                     </p>
                                     <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น </h1>
-                              
-                            <p class="keyword-media fw-light mt-2">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                                    <p class="keyword-media fw-light mt-2">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+                                </div>
                             <div class="contact-box row mb-2">
                               <div class="col-6 p-1">
                                 <div class="border p-2 rounded-5 position-relative bg-primary  d-flex align-items-center">
@@ -96,7 +97,7 @@ onMounted(() => {
                               </div>
                            
                             </div>
-                            <p class="content-media fw-light m-0 p-0" >
+                            <p class="content-media fw-light m-0 p-3 pt-0" >
                                 ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ
                             </p>
                             </div>
@@ -209,6 +210,10 @@ onMounted(() => {
     padding-left:20px;
     padding-right:20px;
 }
+.contact-box{
+    margin-left:10px;
+    margin-right:10px;
+}
 @media (max-width: 768px) {
     .main_logo {
         width: 220px;
@@ -236,7 +241,8 @@ onMounted(() => {
         margin :0;
     }
     .contact-box{
-        font-size:0.8em;
+        font-size:0.7em;
+        margin:0;
     }
 }
 
@@ -260,6 +266,7 @@ onMounted(() => {
     }
     .contact-box{
         font-size:0.8em;
+        margin:0;
     }
     .contact-box .call-number,.line-id{
         font-size:0.8em;
