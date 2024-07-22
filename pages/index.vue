@@ -202,10 +202,7 @@ onMounted(() => {
 .media-container{
     padding:18px;
 }
-.car-select-box{
-    margin-left:20px;
-    margin-right:20px;
-}
+
 
 
 @media (max-width: 768px) {
