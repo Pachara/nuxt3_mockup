@@ -65,7 +65,7 @@ onMounted(() => {
                     
                     <div class="row flex-grow-1">
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-2">
-                            <div class="rounded-3 w-100 p-3 " >
+                            <div class="rounded-3 w-100 p-3 position-relative" >
                             <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
                             <span class="badge rounded-pill text-bg-warning me-1 d-flex " 
                             style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
@@ -73,8 +73,13 @@ onMounted(() => {
                             </p>
                             <h1 class="h1-media fw-bold">เจ้าฟ้า คาร์เร้น</h1>
                             <p class="keyword-media fw-light">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
-                            <p class="content-media fw-light" >ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ</p>
-                            </div>
+                            <p class="content-media fw-light" >
+                                <button class="d-block rounded-circle border" style="width:50px;height:50px;float:right"><i class="bi bi-search fs-3"></i></button>
+
+                                ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ
+                            </p>
+                          
+                        </div>
                         </div>
                         <div class="col-lg-6 col-12 p-2 order-lg-1 order-3 ">
                             <div class="border rounded-3 w-100" style="height:250px;"> &nbsp;</div>
