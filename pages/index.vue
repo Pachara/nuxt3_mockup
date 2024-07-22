@@ -114,13 +114,28 @@ onMounted(() => {
                             </div>
 
                             <div class="row mt-2">
-                                <div class="col-6">
-                                    <div class="border rounded-3"> 
+                                <div class="col-6 ps-0">
+                                    <div class=" rounded-3"> 
                                         <nuxt-img src="images/car/car1.png" class="w-100"/>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="border rounded-3"> 
+                                <div class="col-6 pe-0">
+                                    <div class=" rounded-3"> 
+                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6 p-0">
+                                    <div class=" rounded-3 p-1"> 
+                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4  col-6 p-0">
+                                    <div class=" rounded-3 p-1"> 
+                                        <nuxt-img src="images/car/car1.png" class="w-100"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4  col-6 p-0">
+                                    <div class=" rounded-3 p-1"> 
                                         <nuxt-img src="images/car/car1.png" class="w-100"/>
                                     </div>
                                 </div>
