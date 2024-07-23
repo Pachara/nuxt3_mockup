@@ -266,7 +266,7 @@ onMounted(() => {
         font-size: 0.7em;
     }
     .media-container{
-        border: 4px solid #555;
+        border: 0;
         padding:0;
         border-radius: 0;
     }
@@ -301,7 +301,7 @@ onMounted(() => {
     line-height:35px;
 }
     .media-container {
-        border: 4px solid #333;
+        border: 0;
         padding: 0;
         border-radius: 0;
     }
