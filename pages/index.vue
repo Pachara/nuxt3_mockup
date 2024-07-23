@@ -47,194 +47,306 @@ onMounted(() => {
 </script>
 
 <template>
-<div class="main-container">
+    <div class="main-container">
 
-    <div class="page-container row d-flex justify-content-center min-vh-100">
+        <div class="page-container row d-flex justify-content-center min-vh-100">
 
-        <div class="row w-100 h-100 max-w-1240 content-wrapper">
-            <div class="col-12 media-container bg-carpluz-light">
-                <div class="d-flex flex-column h-100">
-                    <div class="row header-container">
-                        <div class="col-lg-4 col-6 mb-2 order-1 order-lg-1">
-                            <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
-                        </div>
-                        <div class="col-lg-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-lg-3 fw-normal">
-                            <div class="contact-box-menu d-flex justify-content-end w-100 h-100 align-items-center">
-                               <button class="rounded-circle bg-success border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
-                                <i class="bi bi-telephone-fill fs-4"></i>
-                               </button>
-                                <i class="bi bi-line text-success"  style="font-size:2.6em;margin-top:4px;"></i>
+            <div class="row w-100 h-100 max-w-1240 content-wrapper">
+                <div class="col-12 media-container bg-carpluz-light">
+                    <div class="d-flex flex-column h-100">
+                        <div class="row header-container">
+                            <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
+                                <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
                             </div>
-                            
+                            <div
+                                class="col-md-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-md-3 fw-normal">
+                                <div class="contact-box-menu d-flex justify-content-end w-100 h-100 align-items-center">
+                                    <button
+                                        class="rounded-circle bg-success border-0 text-white me-1 d-flex justify-content-center align-items-center"
+                                        style="width:40px;height:40px;">
+                                        <i class="bi bi-telephone-fill fs-4"></i>
+                                    </button>
+                                    <i class="bi bi-line text-success" style="font-size:2.6em;margin-top:4px;"></i>
+                                </div>
+
+                            </div>
+                            <div
+                                class="col-md-5 col-12 ps-2 pe-2 d-flex align-items-center justify-content-start order-3 order-md-2">
+                                <Marquee :images="randomImages" />
+                            </div>
                         </div>
-                        <div class="col-lg-5 col-12 ps-2 pe-2 d-flex align-items-center justify-content-start order-3 order-lg-2">
-                            <Marquee :images="randomImages" />
+
+                        <div class="row body-container flex-grow-1">
+                            <div class="col-md-6 col-12 p-2">
+                                <div class="d-flex flex-column">
+                                    <div class="rounded-3 w-100 p-3 position-relative  order-md-1 order-2">
+                                        <div class="pb-0">
+                                            <p class="d-flex align-items-center"
+                                                style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
+                                                <span class="badge rounded-pill text-bg-warning me-2 d-flex "
+                                                    style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
+                                                    Premium Provider</span>
+                                            </p>
+                                            <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น </h1>
+                                            <p class="keyword-media fw-light mb-1">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน
+                                            </p>
+                                            <p class="text-bigger fs-5 d-flex">
+                                                <span
+                                                    class="d-flex align-items-center border rounded-3 p-1 me-1 bg-info text-white"><i
+                                                        class="bi bi-facebook"></i> <span class="fs-5 ps-1 pe-1">1,200
+                                                        Likes </span></span>
+                                                <span
+                                                    class="d-flex align-items-center border rounded-3 p-1 me-1 bg-ddd"><i
+                                                        class="bi bi-instagram"></i> <span class="fs-5 ps-1 pe-1">1.5K
+                                                        Follows </span></span>
+                                            </p>
+                                        </div>
+
+                                        <p class="content-media fw-light m-0 pt-0">
+                                            ศูนย์บริการรถเช่านครศรีธรรมราช
+                                            มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
+                                            รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน
+                                            เรามีโปรแกรมส่วนลดคุ้มสุดๆ
+                                            มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
+                                        </p>
+                                    </div>
+                                    <div class="rounded-4 w-100 ms-0 me-0 d-flex overflow-hidden order-md-2 order-1"
+                                        style="height:220px;">
+                                        <div class="splide h-100" ref="splide">
+                                            <div class="splide__track h-100">
+                                                <ul class="splide__list h-100">
+                                                    <li v-for="image in images" :key="image" class="splide__slide ">
+                                                        <nuxt-img :src="image" alt="Slide Image" height="220px" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 car-zone col-12">
+                                <div class="h-100 p-2 pt-0">
+                                    <div class="car-select-box row p-0  rounded-3 ps-0 pe-0 overflow-hidden bg-eee"
+                                        style="font-size:0.9em;">
+                                        <div class="col-12 p-1 text-bigger text-center bg-light fw-bold d-flex justify-content-between align-items-center ps-2 pe-2"
+                                            style="border-bottom:1px solid #ddd">
+                                            REALTIME ONLINE BOOKING <span class="blink_me"></span>
+                                        </div>
+                                        <div class="col-12 bg-light p-2">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <span style="padding-left:2px;"><i class="bi bi-geo-alt-fill"></i>
+                                                        รับรถที่จังหวัด</span>
+                                                    <div class="border rounded-3 p-2 bg-dark text-primary "
+                                                        style="margin-top:2px;">
+                                                        นครศรีธรรมราช
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <span style="padding-left:2px;"><i class="bi bi-calendar3"></i>
+                                                        รับรถ</span>
+                                                    <div class="border rounded-3 p-2 bg-dark text-primary "
+                                                        style="margin-top:2px;">14 ม.ย.</div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <span style="padding-left:2px;"><i class="bi bi-calendar3"></i>
+                                                        คืนรถ</span>
+                                                    <div class="border rounded-3 p-2 bg-dark text-primary"
+                                                        style="margin-top:2px;">18 ม.ย.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-2">
+                                            <div class="car-zone-box row">
+                                                <div class="col-12 fs-3 mb-1">
+                                                    ราคาสำหรับเช่า 2 วัน
+                                                </div>
+                                                <div class="col-md-4 col-6 p-0">
+                                                    <div class=" rounded-3">
+                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4  col-6 p-0">
+                                                    <div class=" rounded-3">
+                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4  col-6 p-0">
+                                                    <div class=" rounded-3">
+                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-6 p-0">
+                                                    <div class=" rounded-3">
+                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4  col-6 p-0">
+                                                    <div class=" rounded-3">
+                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4  col-6 p-0">
+                                                    <div class=" rounded-3">
+                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
-                    
-                    <div class="row body-container flex-grow-1">
-                        <div class="col-lg-6 col-12 p-2">
-                            <div class="d-flex flex-column">
-                            <div class="rounded-3 w-100 p-3 position-relative  order-lg-1 order-2" >
-                                <div class="pb-0">
-                                    <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
-                                        <span class="badge rounded-pill text-bg-warning me-2 d-flex " 
-                                        style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
-                                        Premium Provider</span>
-                                    </p>
-                                    <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น </h1>
-                                    <p class="keyword-media fw-light mb-1">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
-                                    <p class="text-bigger fs-5 d-flex">
-                                        <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-info text-white"><i class="bi bi-facebook"></i> <span class="fs-5 ps-1 pe-1">1,200 Likes </span></span>
-                                        <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-ddd"><i class="bi bi-instagram"></i> <span class="fs-5 ps-1 pe-1">1.5K Follows </span></span>
-                                    </p>
-                                </div>
-                         
-                            <p class="content-media fw-light m-0 pt-0" >
-                                ศูนย์บริการรถเช่านครศรีธรรมราช มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ
-                                มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
-                            </p>
-                            </div>
-                            <div class="rounded-4 w-100 ms-0 me-0 d-flex overflow-hidden order-lg-2 order-1" style="height:220px;">
-                                <div class="splide h-100" ref="splide">
-                                    <div class="splide__track h-100">
-                                        <ul class="splide__list h-100">
-                                            <li v-for="image in images" :key="image" class="splide__slide ">
-                                                <nuxt-img :src="image" alt="Slide Image" height="220px" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 car-zone col-12" >
-                          <div class="h-100 p-2 pt-0">
-                            <div class="car-select-box row p-0  rounded-3 ps-0 pe-0 overflow-hidden bg-eee" style="font-size:0.9em;">
-                                <div class="col-12 p-1 text-bigger text-center bg-light fw-bold d-flex justify-content-between align-items-center ps-2 pe-2" style="border-bottom:1px solid #ddd">
-                                    REALTIME ONLINE BOOKING  <span class="blink_me"></span>
-                                </div>
-                                <div class="col-12 bg-light p-2">
-                                    <div class="row">
-                                        <div class="col-6">
-                                    <span  style="padding-left:2px;"><i class="bi bi-geo-alt-fill"></i> รับรถที่จังหวัด</span>
-                                    <div class="border rounded-3 p-2 bg-dark text-primary " style="margin-top:2px;">
-                                        นครศรีธรรมราช
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <span style="padding-left:2px;"><i class="bi bi-calendar3"></i> รับรถ</span>
-                                    <div class="border rounded-3 p-2 bg-dark text-primary " style="margin-top:2px;">14 ม.ย.</div>
-                                </div>
-                                <div class="col-3">
-                                    <span style="padding-left:2px;"><i class="bi bi-calendar3"></i> คืนรถ</span>
-                                    <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">18 ม.ย.</div>
-                                </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 p-2">
-                                <div class="car-zone-box row">
-                                    <div class="col-12 fs-3 mb-1">
-                                        ราคาสำหรับเช่า 2 วัน
-                                    </div>
-                                    <div class="col-lg-4 col-6 p-0">
-                                        <div class=" rounded-3"> 
-                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4  col-6 p-0">
-                                        <div class=" rounded-3"> 
-                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4  col-6 p-0">
-                                        <div class=" rounded-3"> 
-                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-6 p-0">
-                                        <div class=" rounded-3"> 
-                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4  col-6 p-0">
-                                        <div class=" rounded-3"> 
-                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4  col-6 p-0">
-                                        <div class=" rounded-3"> 
-                                            <nuxt-img src="images/car/car1.png" class="w-100"/>
-                                        </div>
-                                    </div>
-
-                            </div>
-                                </div>
-                               
-                                
-                            </div>
-
-                          
+                </div>
+            </div>
 
 
-                          </div>
-                        </div>
-                    
-                      
+
+        </div>
+
+        <div class="next-content d-flex justify-content-center ">
+            <div class="row d-flex justify-content-center w-100" style="max-width:1024px;">
+                <div class="row">
+                    <div class="col-12 text-center  fw-light sriracha p-4" style="font-size:2.5em;">"
+                            เช่ารถ เรื่องง่าย "
                     </div>
                 </div>
             </div>
         </div>
 
-       
+        <div class="next-content d-flex justify-content-center pb-4">
+            <div class="page-container row d-flex justify-content-center w-100" style="max-width:1124px;">
+                <div class="row ">
+                    <div class="col-md-6 col-12 rounded-4 order-2 order-md-1">
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="square-div">
+                                    <div
+                                        class="content border rounded-3  bg-light d-flex align-items-center justify-content-center overflow-hidden">
+                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="square-div">
+                                    <div
+                                        class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="square-div">
+                                    <div
+                                        class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
+                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="square-div">
+                                    <div
+                                        class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-12 fw-light order-1 order-md-2 ">
+                        <div class="row g-2">
+                            <div class="col-md-6 col-12">
+                                <div class="square-div">
+                                    <div class="content  rounded-3 d-flex justify-content-center overflow-hidden">
+                                        <div class="p-3">
+                                            <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                                <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">01</span>
+                                                จอง
+                                            </div>
+                                            <p style="line-height:20px;">
+                                                โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                                โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="square-div">
+                                    <div
+                                        class="content  rounded-3 d-flex justify-content-center overflow-hidden">
+                                        <div class="p-3">
+                                    <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                        <span
+                                            class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">02</span>
+                                        จ่าย
+                                    </div>
+                                    <p  style="line-height:20px;">
+                                        โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                        โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                    </p>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="square-div">
+                                    <div
+                                        class="content  rounded-3 d-flex  justify-content-center overflow-hidden">
+                                        <div class="p-3">
+                                    <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                        <span
+                                            class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">03</span>
+                                        จบ
+                                    </div>
+                                    <p style="line-height:20px;">
+                                        โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                        โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                    </p>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="square-div">
+                                    <div
+                                        class="content  rounded-3 d-flex justify-content-center overflow-hidden">
+                                        <div class="p-3">
+                                    <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                        <span
+                                            class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">04</span>
+                                        รับรถ
+                                    </div>
+                                    <p style="line-height:20px;">
+                                        โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                        โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638
+                                    </p>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
-
-    <div class="next-conten">
-        <div class="page-container row d-flex justify-content-center ">
-            <div class="row w-100 h-100 max-w-1240 content-wrapper pb-4 mb-4">
-          <div class="col-lg-6 col-12 rounded-4 p-4  pt-0 order-2 order-lg-1" >
-            <div class="row g-2">
-                <div class="col-12 text-center pt-4 pb-4 fw-light sriracha" style="font-size:2.5em;">" เช่ารถ เรื่องง่าย "</div>
-    <div class="col-6">
-        <div class="square-div">
-            <div class="content border rounded-3  bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                <nuxt-img src="/images/box.png" class="img-fluid"/>
-            </div>
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="square-div">
-            <div class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                <nuxt-img src="/images/box.png" class="img-fluid"/>
-            </div>
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="square-div">
-            <div class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
-                <nuxt-img src="/images/box.png" class="img-fluid"/>
-            </div>
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="square-div">
-            <div class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                <nuxt-img src="/images/box.png" class="img-fluid"/>
-            </div>
-        </div>
-    </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12 p-4 fw-light order-1 order-lg-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </div>
-        </div>
-      </div>
-    </div>
-
-</div>
 </template>
 
 <style scoped>
@@ -328,6 +440,59 @@ onMounted(() => {
 @keyframes blinker {
   50% {
     opacity: 0.6;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-container {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .content-wrapper {
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
+  }
+
+  .media-container {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .header-container,
+  .body-container {
+    padding: 10px;
+  }
+
+  .main_logo {
+    width: 220px;
+  }
+
+  .car-zone {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .car-zone-box,
+  .car-select-box {
+    padding: 5px;
+    margin: 0 !important;
+  }
+
+  .contact-box-menu {
+    padding-right: 0;
+  }
+
+  .h1-media {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+
+  .content-media {
+    font-size: 1.2em;
+    line-height: 1.4;
   }
 }
 
@@ -425,6 +590,7 @@ onMounted(() => {
 
 
 
+
 .square-div {
     position: relative;
     width: 100%;
@@ -439,6 +605,18 @@ onMounted(() => {
     bottom: 0;
 }
 
+.numberCircle {
+  display: flex;
+  width: 45px;
+  align-items: center;  
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;  
+  border: 2px solid black;
+  background:black;
+  color:white;
+  float:left;
+}
 
 
 
