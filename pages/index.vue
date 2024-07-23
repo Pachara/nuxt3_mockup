@@ -234,7 +234,7 @@ onMounted(() => {
                                 <div class="square-div ">
                                     <div
                                         class="content border rounded-3 bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/box.png" class="img-fluid"  />
+                                        <nuxt-img src="/images/car_step/1.png" class="img-fluid"  />
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                        <nuxt-img src="/images/car_step/2.png" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                        <nuxt-img src="/images/car_step/3.png" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +258,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                        <nuxt-img src="/images/car_step/4.png" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
