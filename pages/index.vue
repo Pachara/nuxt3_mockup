@@ -229,7 +229,7 @@ onMounted(() => {
             <div class="page-container row d-flex justify-content-center w-100" style="max-width:1124px;">
                 <div class="row ">
                     <div class="col-md-6 col-12 rounded-4 order-2 order-md-1">
-                        <div class="row g-2">
+                        <div class="row g-3">
                             <div class="col-6">
                                 <div class="square-div">
                                     <div
@@ -266,10 +266,10 @@ onMounted(() => {
                     </div>
                     
                     <div class="col-md-6 col-12 fw-light order-1 order-md-2 ">
-                        <div class="row g-2">
+                        <div class="row g-3">
                             <div class="col-md-6 col-12">
                                 <div class="square-div">
-                                    <div class="content  rounded-3 d-flex justify-content-center overflow-hidden">
+                                    <div class="content rounded-3 d-flex justify-content-center overflow-hidden">
                                         <div class="p-3">
                                             <div class="fw-bold mb-1" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">01</span>
@@ -547,6 +547,19 @@ onMounted(() => {
     font-size: 1.2em;
     line-height: 1.4;
   }
+  .square-div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 0 !important;
+}
+
+.square-div .content {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 }
 
 @media (max-width: 480px) {
@@ -585,6 +598,19 @@ onMounted(() => {
   .contact-box-menu {
     padding: 0;
   }
+  .square-div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 0 !important;
+}
+
+.square-div .content {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 }
 
 
@@ -604,6 +630,8 @@ onMounted(() => {
     right: 0;
     bottom: 0;
 }
+
+
 
 .numberCircle {
   display: flex;
