@@ -107,8 +107,8 @@ onMounted(() => {
                         </div>
                         
                         <div class="col-lg-6 car-zone col-12" >
-                          <div class="h-100 p-2 ps-3 pe-3 pt-0">
-                            <div class="car-select-box row  p-0  rounded-3 ps-0 pe-0 overflow-hidden bg-eee" style="font-size:0.9em;">
+                          <div class="h-100 p-2 pt-0">
+                            <div class="car-select-box row p-0  rounded-3 ps-0 pe-0 overflow-hidden bg-eee" style="font-size:0.9em;">
                                 <div class="col-12 p-1 text-bigger text-center bg-light fw-bold d-flex justify-content-between align-items-center ps-2 pe-2" style="border-bottom:1px solid #ddd">
                                     REALTIME ONLINE BOOKING  <span class="blink_me"></span>
                                 </div>
