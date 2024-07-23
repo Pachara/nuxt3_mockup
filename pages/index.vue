@@ -194,31 +194,31 @@ onMounted(() => {
     <div class="next-conten">
         <div class="page-container row d-flex justify-content-center ">
             <div class="row w-100 h-100 max-w-1240 content-wrapper pb-4 mb-4">
-          <div class="col-lg-6 col-12 rounded-4 p-4  pt-0" >
+          <div class="col-lg-6 col-12 rounded-4 p-4  pt-0 order-2 order-lg-1" >
             <div class="row g-2">
                 <div class="col-12 text-center pt-4 pb-4 fw-light sriracha" style="font-size:2.5em;">" เช่ารถ เรื่องง่าย "</div>
-    <div class="col-6 col-md-3">
+    <div class="col-6">
         <div class="square-div">
             <div class="content border rounded-3  bg-light d-flex align-items-center justify-content-center overflow-hidden">
                 <nuxt-img src="/images/box.png" class="img-fluid"/>
             </div>
         </div>
     </div>
-    <div class="col-6 col-md-3">
+    <div class="col-6">
         <div class="square-div">
             <div class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
                 <nuxt-img src="/images/box.png" class="img-fluid"/>
             </div>
         </div>
     </div>
-    <div class="col-6 col-md-3">
+    <div class="col-6">
         <div class="square-div">
             <div class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
                 <nuxt-img src="/images/box.png" class="img-fluid"/>
             </div>
         </div>
     </div>
-    <div class="col-6 col-md-3">
+    <div class="col-6">
         <div class="square-div">
             <div class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
                 <nuxt-img src="/images/box.png" class="img-fluid"/>
@@ -227,7 +227,7 @@ onMounted(() => {
     </div>
             </div>
           </div>
-          <div class="col-lg-6 col-12 p-4 fw-light">
+          <div class="col-lg-6 col-12 p-4 fw-light order-1 order-lg-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </div>
         </div>
