@@ -228,9 +228,9 @@ onMounted(() => {
         <div class="next-content d-flex justify-content-center pb-4">
             <div class="page-container row d-flex justify-content-center w-100" style="max-width:1124px;">
                 <div class="row ">
-                    <div class="col-md-6 col-12 rounded-4 order-2 order-md-1">
+                    <div class="col-md-6 col-12 rounded-4 ">
                         <div class="row g-3 ps-3 pe-3" >
-                            <div class="col-md-6 col-12">
+                            <div class="col-md-6 col-6">
                                 <div class="square-div ">
                                     <div
                                         class="content border rounded-3 bg-light d-flex align-items-center justify-content-center overflow-hidden">
@@ -238,7 +238,7 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
+                            <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
@@ -246,7 +246,7 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
+                            <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
@@ -254,7 +254,7 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
+                            <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
@@ -265,8 +265,8 @@ onMounted(() => {
                         </div>
                     </div>
                     
-                    <div class="col-md-6 col-12 fw-light order-1 order-md-2 ">
-                        <div class="row g-2">
+                    <div class="margin-hack col-md-6 col-12 fw-light">
+                        <div class="row">
                             <div class="col-md-6 col-12">
                                 <div class="square-div">
                                     <div class="content rounded-3 d-flex justify-content-center overflow-hidden">
@@ -319,8 +319,8 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <div class="square-div">
+                            <div class="col-md-6 col-12 ">
+                                <div class="square-div ">
                                     <div
                                         class="content border-animate  rounded-3 d-flex justify-content-center overflow-hidden">
                                         <div class="p-3">
@@ -494,6 +494,9 @@ onMounted(() => {
     font-size: 1.2em;
     line-height: 1.4;
   }
+  .margin-hack{
+    margin-top:40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -560,6 +563,9 @@ onMounted(() => {
     right: 0;
     bottom: 0;
 }
+.margin-hack{
+    margin-top:40px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -611,6 +617,9 @@ onMounted(() => {
     right: 0;
     bottom: 0;
 }
+.margin-hack{
+    margin-top:40px;
+  }
 }
 
 
