@@ -191,14 +191,16 @@ onMounted(() => {
 
     </div>
 
-    <div class="next-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+    <div class="next-content mt-2">
+        <div class="page-container row d-flex justify-content-center min-vh-100">
+
+<div class="row w-100 h-100 max-w-1240 content-wrapper">
+          <div class="col-lg-7 col-12 bg-eee p-3 " style="height:500px;">
             <h2>Next Content Section</h2>
             <p>This is the content that appears after the main page container.</p>
             <!-- Add more content as needed -->
           </div>
+          <div class="col-lg-5 col-12"></div>
         </div>
       </div>
     </div>
