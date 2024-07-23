@@ -191,16 +191,45 @@ onMounted(() => {
 
     </div>
 
-    <div class="next-content mt-2">
-        <div class="page-container row d-flex justify-content-center min-vh-100">
-
-<div class="row w-100 h-100 max-w-1240 content-wrapper">
-          <div class="col-lg-7 col-12 bg-eee p-3 " style="height:500px;">
-            <h2>Next Content Section</h2>
-            <p>This is the content that appears after the main page container.</p>
-            <!-- Add more content as needed -->
+    <div class="next-conten">
+        <div class="page-container row d-flex justify-content-center ">
+            <div class="row w-100 h-100 max-w-1240 content-wrapper pb-4 mb-4">
+          <div class="col-lg-6 col-12 rounded-4 p-4  pt-0" >
+            <div class="row g-2">
+                <div class="col-12 text-center pt-4 pb-4 fw-light sriracha" style="font-size:2.5em;">" เช่ารถ เรื่องง่าย "</div>
+    <div class="col-6 col-md-3">
+        <div class="square-div">
+            <div class="content border rounded-3  bg-light d-flex align-items-center justify-content-center overflow-hidden">
+                <nuxt-img src="/images/box.png" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="square-div">
+            <div class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                <nuxt-img src="/images/box.png" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="square-div">
+            <div class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
+                <nuxt-img src="/images/box.png" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="square-div">
+            <div class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                <nuxt-img src="/images/box.png" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-12"></div>
+          <div class="col-lg-6 col-12 p-4 fw-light">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
         </div>
       </div>
     </div>
@@ -392,4 +421,26 @@ onMounted(() => {
     padding: 0;
   }
 }
+
+
+
+
+.square-div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* This creates a 1:1 aspect ratio */
+}
+
+.square-div .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
 </style>
