@@ -229,16 +229,16 @@ onMounted(() => {
             <div class="page-container row d-flex justify-content-center w-100" style="max-width:1124px;">
                 <div class="row ">
                     <div class="col-md-6 col-12 rounded-4 order-2 order-md-1">
-                        <div class="row g-3">
-                            <div class="col-6">
-                                <div class="square-div">
+                        <div class="row g-3 ps-3 pe-3" >
+                            <div class="col-md-6 col-12">
+                                <div class="square-div ">
                                     <div
-                                        class="content border rounded-3  bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/box.png" class="img-fluid" />
+                                        class="content border rounded-3 bg-light d-flex align-items-center justify-content-center overflow-hidden">
+                                        <nuxt-img src="/images/box.png" class="img-fluid"  />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
@@ -246,7 +246,7 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
@@ -254,7 +254,7 @@ onMounted(() => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
@@ -266,7 +266,7 @@ onMounted(() => {
                     </div>
                     
                     <div class="col-md-6 col-12 fw-light order-1 order-md-2 ">
-                        <div class="row g-3">
+                        <div class="row g-2">
                             <div class="col-md-6 col-12">
                                 <div class="square-div">
                                     <div class="content rounded-3 d-flex justify-content-center overflow-hidden">
@@ -322,7 +322,7 @@ onMounted(() => {
                             <div class="col-md-6 col-12">
                                 <div class="square-div">
                                     <div
-                                        class="content  rounded-3 d-flex justify-content-center overflow-hidden">
+                                        class="content border-animate  rounded-3 d-flex justify-content-center overflow-hidden">
                                         <div class="p-3">
                                     <div class="fw-bold mb-1" style="font-size:2.5em;">
                                         <span
@@ -646,6 +646,28 @@ onMounted(() => {
   float:left;
 }
 
+
+
+.border-animate {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, orange 50%, transparent 50%), 
+                linear-gradient(90deg, orange 50%, transparent 50%), 
+                linear-gradient(0deg, orange 50%, transparent 50%), 
+                linear-gradient(0deg, orange 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    border-radius: 5px;
+    padding: 10px;
+    animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
 
 
 
