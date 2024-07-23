@@ -47,12 +47,11 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="page-container d-flex  justify-content-center vh-100">
+    <div class="page-container d-flex justify-content-center vh-100">
         <div class="row w-100 h-100 max-w-1240 content-wrapper">
             <div class="col-12 media-container bg-carpluz-light">
                 <div class="d-flex flex-column h-100">
-
-                    <div class="row">
+                    <div class="row header-container">
                         <div class="col-lg-4 col-6 mb-2 order-1 order-lg-1">
                             <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
                         </div>
@@ -70,7 +69,7 @@ onMounted(() => {
                         </div>
                     </div>
                     
-                    <div class="row flex-grow-1">
+                    <div class="row body-container flex-grow-1">
                         <div class="col-lg-6 col-12 p-2">
                             <div class="d-flex flex-column">
                             <div class="rounded-3 w-100 p-3 position-relative  order-lg-1 order-2" >
@@ -93,7 +92,7 @@ onMounted(() => {
                                 มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
                             </p>
                             </div>
-                            <div class="rounded-4 w-100 ms-2 me-2 d-flex overflow-hidden order-lg-2 order-1" style="height:220px;">
+                            <div class="rounded-4 w-100 ms-0 me-0 d-flex overflow-hidden order-lg-2 order-1" style="height:220px;">
                                 <div class="splide h-100" ref="splide">
                                     <div class="splide__track h-100">
                                         <ul class="splide__list h-100">
@@ -187,8 +186,14 @@ onMounted(() => {
     </div>
 </template>
 <style scoped>
-    .page-container{
+.page-container{
     align-items:center
+}
+.header-container{
+    padding:10px;
+}
+.body-container{
+    padding:10px;
 }
 .h1-media{
     font-size:2.3em;
@@ -215,7 +220,6 @@ onMounted(() => {
     height: 100%;
 }
 .media-container{
-    padding:18px;
     border: 2px solid #555;
     border-radius: 15px;
 }
@@ -238,6 +242,12 @@ onMounted(() => {
     .page-container{
     align-items: flex-start;
 }
+.body-container{
+    padding:0;
+}
+.header-container{
+    padding:5px;
+}
     .main_logo {
         width: 220px;
     }
@@ -256,7 +266,7 @@ onMounted(() => {
         font-size: 0.7em;
     }
     .media-container{
-        padding:5px;
+        padding:0;
         border-radius: 0;
     }
     .car-zone{
@@ -279,11 +289,18 @@ onMounted(() => {
     .page-container{
     align-items: flex-start;
 }
+.header-container{
+    padding:5px;
+}
+.body-container{
+    padding:0;
+}
     .h1-media{
     font-size:1.8em;
     line-height:35px;
 }
-.media-container{
+    .media-container {
+        padding: 0;
         border-radius: 0;
     }
 
