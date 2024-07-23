@@ -47,7 +47,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="d-flex align-items-center justify-content-center vh-100 p-0">
+    <div class="page-container d-flex  justify-content-center vh-100">
         <div class="row w-100 h-100 max-w-1240 content-wrapper">
             <div class="col-12 media-container bg-carpluz-light">
                 <div class="d-flex flex-column h-100">
@@ -187,7 +187,9 @@ onMounted(() => {
     </div>
 </template>
 <style scoped>
-
+    .page-container{
+    align-items:center
+}
 .h1-media{
     font-size:2.3em;
     line-height:40px;
@@ -233,6 +235,9 @@ onMounted(() => {
 
 
 @media (max-width: 768px) {
+    .page-container{
+    align-items: flex-start;
+}
     .main_logo {
         width: 220px;
     }
@@ -271,7 +276,9 @@ onMounted(() => {
 }
 
 @media (max-width: 480px) {
-
+    .page-container{
+    align-items: flex-start;
+}
     .h1-media{
     font-size:1.8em;
     line-height:35px;
