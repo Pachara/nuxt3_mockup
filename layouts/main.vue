@@ -8,26 +8,28 @@
     </div>
 
 </template>
-<style scoped>
-/* Apply this to hide scrollbars on all elements */
-.scrollbar-hidden {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* WebKit and Blink (Chrome, Safari, newer versions of Opera) */
-.scrollbar-hidden::-webkit-scrollbar {
+.scroll-container {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-container::-webkit-scrollbar {
     display: none;
 }
 
-/* Ensure the body also doesn't show scrollbars */
-body {
-    overflow: hidden;
-}
-
-/* Optional: If you want to allow scrolling on the main content */
-.scrollbar-hidden {
-    overflow-y: auto;
-    height: 100vh;
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 </style>
