@@ -241,7 +241,6 @@ onMounted(() => {
 @media (max-width: 768px) {
 .page-container{
     align-items: flex-start;
-    width:100vh
 }
 .body-container{
     padding:0;
@@ -290,7 +289,6 @@ onMounted(() => {
 @media (max-width: 480px) {
 .page-container{
     align-items: flex-start;
-    width:100vh
 }
 .header-container{
     padding:5px;
