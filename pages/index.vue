@@ -47,7 +47,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="page-container d-flex justify-content-center vh-100">
+<div class="main-container">
+
+    <div class="page-container row d-flex justify-content-center min-vh-100">
+
         <div class="row w-100 h-100 max-w-1240 content-wrapper">
             <div class="col-12 media-container bg-carpluz-light">
                 <div class="d-flex flex-column h-100">
@@ -183,164 +186,103 @@ onMounted(() => {
                 </div>
             </div>
         </div>
+
+       
+
     </div>
+
+    <div class="next-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Next Content Section</h2>
+            <p>This is the content that appears after the main page container.</p>
+            <!-- Add more content as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
 </template>
+
 <style scoped>
-.page-container{
-    align-items:center
+.main-container {
+  overflow-x: hidden;
+  width: 100%;
 }
-.header-container{
-    padding:10px;
+
+.page-container {
+  align-items: center;
 }
-.body-container{
-    padding:10px;
+
+.header-container {
+  padding: 10px;
 }
-.h1-media{
-    font-size:2.3em;
-    line-height:40px;
+
+.body-container {
+  padding: 10px;
 }
-.content-media{
-    font-size:1.3em;
-    line-height:30px;
+
+.h1-media {
+  font-size: 2.3em;
+  line-height: 40px;
 }
+
+.content-media {
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
 .bg-carpluz-light {
-    background: #F1EFE7 !important;
+  background: #F1EFE7 !important;
 }
 
 .main_logo {
-    width: 350px;
+  width: 350px;
 }
 
 .max-w-1240 {
-    max-width: 1240px;
+  max-width: 1240px;
 }
+
 .content-wrapper {
-    max-width: 1240px;
-    max-height: 697px;
-    height: 100%;
-}
-.media-container{
-    border: 2px solid #555;
-    border-radius: 15px;
-}
-.car-zone{
-    padding-left:30px !important;
-    padding-right:30px !important;
-}
-.contact-box-menu{
-    padding-right:25px;
-}
-.car-zone-box{
-        padding:10px;
-    }
-    .car-select-box{
-        border:1px solid #333
-    }
-
-
-@media (max-width: 768px) {
-.page-container{
-    align-items: flex-start;
-}
-.body-container{
-    padding:0;
-}
-.header-container{
-    padding:5px;
-}
-    .main_logo {
-        width: 220px;
-    }
-    .page-container {
-        align-items: flex-start;
-        padding: 0;
-    }
-
-    .content-wrapper {
-        height: 83.5vh;
-    }
-    .responsive-box {
-        padding: 7px;
-    }
-    .content-1 {
-        font-size: 0.7em;
-    }
-    .media-container{
-        border: 0;
-        padding:0;
-        border-radius: 0;
-    }
-    .car-zone{
-        padding:0;
-    }
-    .car-zone-box{
-        padding:0;
-    }
-    .car-select-box{
-        margin :0 !important;
-    }
-    .contact-box-menu{
-        padding:0;
-    }
-
-
+  max-width: 1240px;
+  max-height: 697px;
+  height: 100%;
 }
 
-@media (max-width: 480px) {
-.page-container{
-    align-items: flex-start;
-}
-.header-container{
-    padding:5px;
-}
-.body-container{
-    padding:0;
-}
-    .h1-media{
-    font-size:1.8em;
-    line-height:35px;
-}
-    .media-container {
-        border: 0;
-        padding: 0;
-        border-radius: 0;
-    }
-
-.content-media{
-    font-size:1.2em;
-    line-height:25px;
-}
-    .main_logo {
-        width: 220px;
-    }
-    .car-zone{
-        padding:0 !important;
-    }
-    .car-zone-box{
-        padding:0;
-    }
-    .car-select-box{
-        margin :0;
-    }
-    .contact-box-menu{
-        padding:0;
-    }
-
-
-
+.media-container {
+  border: 2px solid #555;
+  border-radius: 15px;
 }
 
+.car-zone {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
 
+.contact-box-menu {
+  padding-right: 25px;
+}
+
+.car-zone-box {
+  padding: 10px;
+}
+
+.car-select-box {
+  border: 1px solid #333;
+}
 
 .splide {
   width: 100%;
   margin: auto;
 }
+
 .splide__slide {
   background: white;
   text-align: center;
 }
-
 
 .blink_me {
   animation: blinker 2s linear infinite;
@@ -351,11 +293,101 @@ onMounted(() => {
   background-color: green;
   border-radius: 100%;
 }
+
 @keyframes blinker {
   50% {
     opacity: 0.6;
   }
 }
 
+@media (max-width: 768px) {
+  .page-container {
+    align-items: flex-start;
+    padding: 0;
+  }
 
+  .content-wrapper {
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
+  }
+
+  .media-container {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .header-container,
+  .body-container {
+    padding: 10px;
+  }
+
+  .main_logo {
+    width: 220px;
+  }
+
+  .car-zone {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .car-zone-box,
+  .car-select-box {
+    padding: 5px;
+    margin: 0 !important;
+  }
+
+  .contact-box-menu {
+    padding-right: 0;
+  }
+
+  .h1-media {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+
+  .content-media {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 5px;
+  }
+
+  .body-container {
+    padding: 0;
+  }
+
+  .h1-media {
+    font-size: 1.8em;
+    line-height: 1.2;
+  }
+
+  .content-media {
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
+
+  .main_logo {
+    width: 180px;
+  }
+
+  .car-zone {
+    padding: 0 !important;
+  }
+
+  .car-zone-box,
+  .car-select-box {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-box-menu {
+    padding: 0;
+  }
+}
 </style>
