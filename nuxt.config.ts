@@ -2,12 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  nitro: {
-    prerender: {
-      autoSubfolderIndex: false
-    }
-  },
-
 
   css: [
     '@/assets/css/main.css',
@@ -29,9 +23,9 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Kanit: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      Sriracha: true  // Include all necessary weights
+      Sriracha: true  
     },
-    download: false,  // Use fonts from CDN
+    download: false, 
     inject: true,
     display: 'swap'
   }
