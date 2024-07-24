@@ -5,3 +5,6 @@
     overflow-y: auto;
     touch-action: manipulation;
   }
+  .sriracha {
+    font-family: 'Sriracha', cursive;
+  }
