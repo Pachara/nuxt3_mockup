@@ -16,22 +16,22 @@ const splideInitialized = ref(false);
 const preloadImage = (src) => {
   return new Promise((resolve, reject) => {
     const img = new Image();
-    img.src = src;
     img.onload = () => resolve(src);
     img.onerror = reject;
+    img.src = src;
   });
-}
+};
 
- const preloadAllImages = async () => {
+const preloadAllImages = async () => {
   try {
     const promises = props.images.map(preloadImage);
     loadedImages.value = await Promise.all(promises);
     isLoading.value = false;
   } catch (error) {
     console.error('Failed to preload images:', error);
-    isLoading.value = false; // Consider how you want to handle errors
+    isLoading.value = false;
   }
-}
+};
 
 watch(() => props.images, preloadAllImages, { immediate: true });
 
@@ -44,7 +44,7 @@ onMounted(() => {
   });
 });
 
-const  initializeSplide = () => {
+const initializeSplide = () => {
   if (splide.value) {
     const { $Splide, $AutoScroll } = useNuxtApp();
     const splideInstance = new $Splide(splide.value, {
@@ -65,7 +65,7 @@ const  initializeSplide = () => {
   } else {
     console.error('Splide element not found');
   }
-}
+};
 </script>
 
 <template>
@@ -80,9 +80,8 @@ const  initializeSplide = () => {
             <div class="image-container">
               <img
                 :src="image"
-                width="auto"
-                height="200"
                 alt="Slide Image"
+                class="slide-image"
               />
             </div>
           </li>
@@ -108,9 +107,9 @@ const  initializeSplide = () => {
   overflow: hidden;
 }
 
-.image-container img {
+.slide-image {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
 }
 </style>
