@@ -59,13 +59,19 @@ onMounted(() => {
                     <div class="d-flex flex-column h-100">
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
-                                <nuxt-img src="https://mockup-a0p.pages.dev/images/logo/logo_white2.png"
-                                   format="webp" 
-                                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                                   width="400" 
-                                   height="114"  
-                                   class="main_logo"
-                                   />
+                              <nuxt-img
+    provider="cloudinary"
+    src="https://mockup-a0p.pages.dev/images/logo/logo_white.png"
+    width="400"
+    height="114"
+    format="webp"
+    quality="auto"
+    fit="contain"
+    loading="eager"
+    sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
+    class="main_logo"
+    alt="Company Logo"
+  />
                             </div>
                             <div
                                 class="col-md-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-md-3 fw-normal">
