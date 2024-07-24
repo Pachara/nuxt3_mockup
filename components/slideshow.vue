@@ -67,11 +67,15 @@ const imageStyle = { height: '100%', width: 'auto' };
   .img1 {
     margin-right: 2px;
   }
+  .marquee-container{
+    padding-top:5px !important;
+  }
 }
 
 @media (max-width: 480px) {
   .img1 {
     margin-right: 1px;
   }
+
 }
 </style>

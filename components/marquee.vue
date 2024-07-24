@@ -76,6 +76,9 @@ const imageStyle = computed(() => {
   .img1 {
     margin-right: 2px;
   }
+  .marquee-container {
+    margin-top:5px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -91,6 +94,9 @@ const imageStyle = computed(() => {
 
   .img1 {
     margin-right: 1px;
+  }
+  .marquee-container {
+    margin-top:10px;
   }
 }
 </style>

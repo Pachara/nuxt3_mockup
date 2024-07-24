@@ -28,7 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="splide_slider rounded-4 w-100 ms-0 me-0 d-flex overflow-hidden order-md-2 order-1">
+    <div class="w-100 ms-0 me-0 d-flex overflow-hidden order-md-2 order-1">
     <div class="splide h-100" ref="splide">
       <div class="splide__track h-100">
         <ul class="splide__list h-100">

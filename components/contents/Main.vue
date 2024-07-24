@@ -45,8 +45,8 @@ const images = ref([
         </header>
         <main class="body-container row flex-grow-1">
           <div class="col-md-6 col-12 d-flex flex-column">
-            <ProviderInfo class="order-md-1 order-2" />
-            <SplideSlider :images="images" class="order-md-2 order-1" />
+            <ProviderInfo class="provider-info order-md-1 order-2  p-4" />
+            <SplideSlider :images="images" class="splide-slider order-md-2 order-1" />
           </div>
           <div class="col-md-6 col-12 car-zone">
             <CarBox />
@@ -58,6 +58,10 @@ const images = ref([
 </template>
 
 <style scoped>
+.splide-slider{
+    padding-left:20px !important;
+    padding-right:20px !important;
+}
 .page-container {
   align-items: center;
 }
@@ -117,6 +121,11 @@ const images = ref([
     padding-left: 15px;
     padding-right: 15px;
   }
+  .splide-slider{
+    padding:0;
+    padding-top:5px;
+   }
+
 }
 
 @media (max-width: 480px) {
@@ -135,5 +144,10 @@ const images = ref([
   .car-zone {
     padding: 0;
   }
+  .splide-slider{
+    padding:0 !important;
+    padding-top:5px;
+   }
+
 }
 </style>
