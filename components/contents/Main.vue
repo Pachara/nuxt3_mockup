@@ -45,7 +45,7 @@ const images = ref([
         </header>
         <main class="body-container row flex-grow-1">
           <div class="col-md-6 col-12 d-flex flex-column">
-            <ProviderInfo class="provider-info order-md-1 order-2  p-4" />
+            <ProviderInfo class="provider-info order-md-1 order-2" />
             <SplideSlider :images="images" class="splide-slider order-md-2 order-1" />
           </div>
           <div class="col-md-6 col-12 car-zone">
@@ -58,6 +58,9 @@ const images = ref([
 </template>
 
 <style scoped>
+.provider-info{
+    padding:20px;
+}
 .splide-slider{
     padding-left:20px !important;
     padding-right:20px !important;
