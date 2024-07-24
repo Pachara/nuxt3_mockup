@@ -194,8 +194,8 @@ onMounted(() => {
                                                           <nuxt-img
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
-                                                            width="200"
-                                                            height="200"
+                                                            width="172"
+                                                            height="172"
                                                             format="webp"
                                                             quality="auto"
                                                             class="img-fluid"
@@ -207,27 +207,72 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
+                                                      <nuxt-img
+                                                            provider="cloudinary"
+                                                            src="https://mockup-a0p.pages.dev/images/car/car1.png"  
+                                                            width="172"
+                                                            height="172"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            class="img-fluid"
+                                                            alt="Slide Image"
+                                                          />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
+                                                      <nuxt-img
+                                                            provider="cloudinary"
+                                                            src="https://mockup-a0p.pages.dev/images/car/car1.png"  
+                                                            width="172"
+                                                            height="172"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            class="img-fluid"
+                                                            alt="Slide Image"
+                                                          />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
+                                                      <nuxt-img
+                                                            provider="cloudinary"
+                                                            src="https://mockup-a0p.pages.dev/images/car/car1.png"  
+                                                            width="172"
+                                                            height="172"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            class="img-fluid"
+                                                            alt="Slide Image"
+                                                          />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  height="400" class="img-fluid" />
+                                                      <nuxt-img
+                                                            provider="cloudinary"
+                                                            src="https://mockup-a0p.pages.dev/images/car/car1.png"  
+                                                            width="172"
+                                                            height="172"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            class="img-fluid"
+                                                            alt="Slide Image"
+                                                          />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  height="400" class="img-fluid" />
+                                                      <nuxt-img
+                                                            provider="cloudinary"
+                                                            src="https://mockup-a0p.pages.dev/images/car/car1.png"  
+                                                            width="172"
+                                                            height="172"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            class="img-fluid"
+                                                            alt="Slide Image"
+                                                          />
                                                     </div>
                                                 </div>
 
