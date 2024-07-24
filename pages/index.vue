@@ -56,7 +56,8 @@ onMounted(() => {
                     <div class="d-flex flex-column h-100">
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
-                                <nuxt-img src="images/logo/logo_white.png" class="main_logo" />
+                                <nuxt-img src="images/logo/logo_white.png" width="400" 
+                                height="114"  class="main_logo" />
                             </div>
                             <div
                                 class="col-md-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-md-3 fw-normal">
@@ -233,7 +234,7 @@ onMounted(() => {
                             <div class="col-md-6 col-6">
                                 <div class="square-div ">
                                     <div
-                                        class="content border rounded-3 bg-light d-flex align-items-center justify-content-center overflow-hidden">
+                                        class="content border rounded-5 bg-light d-flex align-items-center justify-content-center overflow-hidden">
                                         <nuxt-img src="/images/car_step/1.png" class="img-fluid"  />
                                     </div>
                                 </div>
@@ -241,7 +242,7 @@ onMounted(() => {
                             <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div
-                                        class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                                        class="content border rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
                                         <nuxt-img src="/images/car_step/2.png" class="img-fluid" />
                                     </div>
                                 </div>
@@ -249,7 +250,7 @@ onMounted(() => {
                             <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div
-                                        class="content border rounded-3  d-flex align-items-center justify-content-center overflow-hidden">
+                                        class="content border rounded-5  d-flex align-items-center justify-content-center overflow-hidden">
                                         <nuxt-img src="/images/car_step/3.png" class="img-fluid" />
                                     </div>
                                 </div>
@@ -257,7 +258,7 @@ onMounted(() => {
                             <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div
-                                        class="content border rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                                        class="content border border-primary border-2 rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
                                         <nuxt-img src="/images/car_step/4.png" class="img-fluid" />
                                     </div>
                                 </div>
@@ -382,7 +383,8 @@ onMounted(() => {
 }
 
 .main_logo {
-  width: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .max-w-1240 {
