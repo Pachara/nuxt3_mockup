@@ -56,7 +56,7 @@ onMounted(() => {
                     <div class="d-flex flex-column h-100">
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
-                                <nuxt-img src="images/logo/logo_white.png" width="400" 
+                                <nuxt-img src="images/logo/logo_white.png" format="webp" width="400" 
                                 height="114"  class="main_logo" />
                             </div>
                             <div
