@@ -170,22 +170,22 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp" width="400px" height="400px" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp" width="400px" height="400px" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp" width="400px" height="400px" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp" width="400px" height="400px" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
