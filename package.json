@@ -11,7 +11,7 @@
     "deploy": "git add . && git commit -am 'make it better' && git push origin main"
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/image": "npm:@nuxt/image-nightly@latest",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
