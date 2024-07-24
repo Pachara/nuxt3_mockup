@@ -117,7 +117,9 @@ onMounted(() => {
                                             <div class="splide__track h-100">
                                                 <ul class="splide__list h-100">
                                                     <li v-for="image in images" :key="image" class="splide__slide ">
-                                                        <nuxt-img :src="image" format="webp"  height="220px" alt="Slide Image"/>
+                                                      <div class="image-container">
+                                                        <nuxt-img :src="image" format="webp"  size="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Slide Image"/>
+                                                      </div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -427,6 +429,18 @@ onMounted(() => {
 .splide__slide {
   background: white;
   text-align: center;
+}
+
+.image-container {
+  height: 220px; /* Match this to the image height */
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .blink_me {
