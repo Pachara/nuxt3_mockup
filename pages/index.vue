@@ -62,8 +62,8 @@ onMounted(() => {
                                 <nuxt-img src="https://mockup-a0p.pages.dev/images/logo/logo_white2.png"
                                    format="webp" 
                                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                                   width="400" 
-                                   height="114"  
+                                   width="400px" 
+                                   height="114px"  
                                    class="main_logo"
                                    />
                             </div>
