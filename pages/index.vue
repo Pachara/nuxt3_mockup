@@ -6,7 +6,10 @@ definePageMeta({
 const { data: randomImages, status, refresh } = await useAsyncData('randomImages', async () => {
     const response = await fetch('https://randomuser.me/api/?results=15');
     const data = await response.json();
-    return data.results.map(user => user.picture.thumbnail);
+    return data.results.map(user => {
+        const originalUrl = user.picture.thumbnail;
+        return `https://res.cloudinary.com/dixuugvyv/image/fetch/f_auto,q_auto/${encodeURIComponent(originalUrl)}`;
+    });
 });
 
 const refreshImages = () => refresh();
@@ -14,15 +17,15 @@ const refreshImages = () => refresh();
 
 const splide = ref(null);
 const images = ref([
-    '/images/slideshow/1.JPG',
-    '/images/slideshow/2.JPG',
-    '/images/slideshow/3.JPG',
-    '/images/slideshow/4.JPG',
-    '/images/slideshow/5.JPG',
-    '/images/slideshow/6.JPG',
-    '/images/slideshow/7.JPG',
-    '/images/slideshow/8.JPG',
-    '/images/slideshow/9.JPG'
+    'https://mockup-a0p.pages.dev/images/slideshow/1.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/2.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/3.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/4.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/5.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/6.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/7.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/8.JPG',
+    'https://mockup-a0p.pages.dev/images/slideshow/9.JPG'
 ]);
 
 onMounted(() => {
@@ -56,7 +59,7 @@ onMounted(() => {
                     <div class="d-flex flex-column h-100">
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
-                                <nuxt-img src="images/logo/logo_white.png" format="webp" width="400" 
+                                <nuxt-img src="https://mockup-a0p.pages.dev/images/logo/logo_white.png" format="webp" width="400" 
                                   height="114"  class="main_logo" />
                             </div>
                             <div
@@ -167,32 +170,32 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" class="w-100" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" class="w-100" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" class="w-100" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" class="w-100" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" class="w-100" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="images/car/car1.png" class="w-100" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" class="w-100" />
                                                     </div>
                                                 </div>
 
@@ -237,7 +240,7 @@ onMounted(() => {
                                 <div class="square-div ">
                                     <div
                                         class="content border rounded-5 bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/car_step/1.png" class="img-fluid"  />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/1.png" class="img-fluid"  />
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +248,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/car_step/2.png" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/2.png" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -253,7 +256,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5  d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/car_step/3.png" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/3.png" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +264,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border border-primary border-2 rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="/images/car_step/4.png" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/4.png" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>

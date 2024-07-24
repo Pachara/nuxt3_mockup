@@ -22,18 +22,9 @@ export default defineNuxtConfig({
   image: {
     provider: 'cloudinary',
     cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dixuugvyv/image/upload/' // Replace dixuugvyv with your actual Cloudinary cloud name
-    },
-    domains: ['res.cloudinary.com'], // Add Cloudinary's domain to the allowed list
-    presets: {
-      default: {
-        modifiers: {
-          format: 'webp',
-          quality: 80,
-        }
-      }
+      baseURL: 'https://res.cloudinary.com/dixuugvyv/image/fetch/',
     }
-  }
+  },
 
   googleFonts: {
     families: {
