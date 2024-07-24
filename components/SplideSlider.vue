@@ -13,7 +13,7 @@ const isLoading = ref(true);
 const loadedImages = ref([]);
 const splideInitialized = ref(false);
 
-function preloadImage(src) {
+const preloadImage = (src) => {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.src = src;
@@ -22,7 +22,7 @@ function preloadImage(src) {
   });
 }
 
-async function preloadAllImages() {
+ const preloadAllImages = async () => {
   try {
     const promises = props.images.map(preloadImage);
     loadedImages.value = await Promise.all(promises);
@@ -44,7 +44,7 @@ onMounted(() => {
   });
 });
 
-function initializeSplide() {
+const  initializeSplide = () => {
   if (splide.value) {
     const { $Splide, $AutoScroll } = useNuxtApp();
     const splideInstance = new $Splide(splide.value, {
@@ -70,8 +70,7 @@ function initializeSplide() {
 
 <template>
   <div v-if="isLoading" class="loading-container">
-    <p>Loading images... Please wait.</p>
-    <!-- You can add a loading spinner or progress bar here -->
+    <p class="fw-light">กำลังโหลดรูปภาพ...กรุณารอสักครู่</p>
   </div>
   <div v-else class="w-100 ms-0 me-0 d-flex overflow-hidden order-md-2 order-1">
     <div class="splide h-100" ref="splide">
@@ -111,7 +110,7 @@ function initializeSplide() {
 
 .image-container img {
   width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: cover;
 }
 </style>
