@@ -24,6 +24,12 @@ onMounted(() => {
     arrows: false,
     pagination: false,
     lazyLoad: 'nearby',
+    preloadPages: 1,
+    updateOnMove: true,
+    throttle: 100,
+    waitForTransition: false,
+    wheelSleep: 50,
+    releaseWheel: true,
   });
 
   splideInstance.mount({ AutoScroll: $AutoScroll });
@@ -46,6 +52,8 @@ onMounted(() => {
                 format="webp"
                 quality="auto"
                 fit="cover"
+                placeholder
+                :data-splide-lazy="image"
                 alt="Slide Image"
               />
             </div>
