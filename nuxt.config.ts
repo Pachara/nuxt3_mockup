@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     '@splidejs/splide/css'
   ],
 
-  modules: ["@nuxt/image", "@nuxtjs/google-fonts"],
+  modules: ["@nuxtjs/google-fonts","@nuxt/image-edge"],
   image: {
     provider: 'ipx',
     formats: ['webp']
