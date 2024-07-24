@@ -240,7 +240,7 @@ onMounted(() => {
                                 <div class="square-div ">
                                     <div
                                         class="content border rounded-5 bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/1.png" class="img-fluid"  />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/1.png" format="webp" width="400px" height="400px" class="img-fluid"  />
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/2.png" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/2.png" format="webp" width="400px" height="400px" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +256,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5  d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/3.png" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/3.png" format="webp" width="400px" height="400px" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -264,7 +264,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border border-primary border-2 rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/4.png" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/4.png" format="webp" width="400px" height="400px" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
