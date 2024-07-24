@@ -14,6 +14,10 @@ export default defineNuxtConfig({
   ],
 
   modules: ["@nuxt/image", "@nuxtjs/google-fonts"],
+  image: {
+    provider: 'ipx',
+    formats: ['webp']
+  },
   googleFonts: {
     families: {
       Kanit: [100, 200, 300, 400, 500, 600, 700, 800, 900],
