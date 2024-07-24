@@ -14,28 +14,21 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/image", "@nuxtjs/google-fonts"],
   image: {
-    provider: 'cloudinary',
     cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dixuugvyv/image/fetch/',
+      baseURL: 'https://res.cloudinary.com/dixuugvyv/image/fetch/'
     },
     screens: {
-      'xs': 320,
-      'sm': 640,
-      'md': 768,
-      'lg': 1024,
-      'xl': 1280,
-      'xxl': 1536,
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
       '2xl': 1536
     },
-    sizes: {
-      'xs': '100vw',
-      'sm': '50vw',
-      'md': '50vw',
-      'lg': '33vw',
-      'xl': '33vw',
-      'xxl': '33vw',
-      '2xl': '33vw'
-    }
+    domains: ['mockup-a0p.pages.dev'],
+    format: ['webp'],
+    provider: 'cloudinary'
   },
 
   googleFonts: {

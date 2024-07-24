@@ -8,7 +8,7 @@ const { data: randomImages, status, refresh } = await useAsyncData('randomImages
     const data = await response.json();
     return data.results.map(user => {
         const originalUrl = user.picture.thumbnail;
-        return `https://res.cloudinary.com/dixuugvyv/image/fetch/f_auto,q_auto/${encodeURIComponent(originalUrl)}`;
+        return originalUrl;
     });
 });
 
@@ -27,6 +27,9 @@ const images = ref([
     'https://mockup-a0p.pages.dev/images/slideshow/8.JPG',
     'https://mockup-a0p.pages.dev/images/slideshow/9.JPG'
 ]);
+
+
+
 
 onMounted(() => {
   const { $Splide, $AutoScroll } = useNuxtApp();
@@ -60,18 +63,16 @@ onMounted(() => {
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
                               <nuxt-img
-    provider="cloudinary"
-    src="https://mockup-a0p.pages.dev/images/logo/logo_white.png"
-    width="400"
-    height="114"
-    format="webp"
-    quality="auto"
-    fit="contain"
-    loading="eager"
-    sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
-    class="main_logo"
-    alt="Company Logo"
-  />
+                                provider="cloudinary"
+                                src="https://mockup-a0p.pages.dev/images/logo/logo_white.png"
+                                width="400"
+                                height="114"
+                                format="webp"
+                                quality="auto"
+                                loading="eager"
+                                class="main_logo"
+                                alt="Company Logo"
+                              />
                             </div>
                             <div
                                 class="col-md-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-md-3 fw-normal">
@@ -132,10 +133,14 @@ onMounted(() => {
                                                 <ul class="splide__list h-100">
                                                     <li v-for="image in images" :key="image" class="splide__slide ">
                                                       <div class="image-container">
-                                                        <nuxt-img :src="image" 
-                                                          format="webp"  
-                                                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px" 
-                                                          alt="Slide Image"
+                                                          <nuxt-img
+                                                            provider="cloudinary"
+                                                            :src="image" 
+                                                            width="200"
+                                                            height="200"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            alt="Slide Image"
                                                           />
                                                       </div>
                                                     </li>
@@ -185,10 +190,19 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  
-                                                          format="webp" 
-                                                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px" 
-                                                          width="400" height="400" class="img-fluid" />
+
+                                                          <nuxt-img
+                                                            provider="cloudinary"
+                                                            src="https://mockup-a0p.pages.dev/images/car/car1.png"  
+                                                            width="200"
+                                                            height="200"
+                                                            format="webp"
+                                                            quality="auto"
+                                                            class="img-fluid"
+                                                            alt="Slide Image"
+                                                          />
+
+
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
@@ -258,8 +272,15 @@ onMounted(() => {
                                 <div class="square-div ">
                                     <div
                                         class="content border rounded-5 bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/1.png" 
-                                          format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid"  />
+                                        <nuxt-img
+                                        provider="cloudinary"
+                                        format="webp"
+                                        src="https://mockup-a0p.pages.dev/images/car_step/1.png"
+                                        width="400"
+                                        height="400"
+                                        class="img-fluid"
+                                        alt="Car Step Image"
+                                      />
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +288,15 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/2.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
+                                        <nuxt-img
+                                        provider="cloudinary"
+                                        format="webp"
+                                        src="https://mockup-a0p.pages.dev/images/car_step/2.png"
+                                        width="400"
+                                        height="400"
+                                        class="img-fluid"
+                                        alt="Car Step Image"
+                                      />
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +304,15 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5  d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/3.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
+                                        <nuxt-img
+                                        provider="cloudinary"
+                                        format="webp"
+                                        src="https://mockup-a0p.pages.dev/images/car_step/3.png"
+                                        width="400"
+                                        height="400"
+                                        class="img-fluid"
+                                        alt="Car Step Image"
+                                      />
                                     </div>
                                 </div>
                             </div>
@@ -283,7 +320,15 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border border-primary border-2 rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/4.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
+                                        <nuxt-img
+                                        provider="cloudinary"
+                                        format="webp"
+                                        src="https://mockup-a0p.pages.dev/images/car_step/4.png"
+                                        width="400"
+                                        height="400"
+                                        class="img-fluid"
+                                        alt="Car Step Image"
+                                      />
                                     </div>
                                 </div>
                             </div>
