@@ -31,6 +31,7 @@ const images = ref([
 
 
 
+
 onMounted(() => {
   const { $Splide, $AutoScroll } = useNuxtApp();
   const splideInstance = new $Splide(splide.value, {
@@ -47,6 +48,7 @@ onMounted(() => {
   });
 
   splideInstance.mount({ AutoScroll: $AutoScroll });
+
 });
 
 
@@ -65,8 +67,8 @@ onMounted(() => {
                               <nuxt-img
                                 provider="cloudinary"
                                 src="https://mockup-a0p.pages.dev/images/logo/logo_white.png"
-                                width="400"
-                                height="114"
+                                width="379"
+                                height="108"
                                 format="webp"
                                 quality="auto"
                                 loading="eager"
@@ -321,8 +323,8 @@ onMounted(() => {
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/1.png"
-                                         width="250"
-                                        height="250"
+                                        width="234"
+                                        height="234"
                                         class="img-fluid"
                                         alt="Car Step Image"
                                       />
@@ -337,8 +339,8 @@ onMounted(() => {
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/2.png"
-                                        width="250"
-                                        height="250"
+                                          width="234"
+                                        height="234"
                                         class="img-fluid"
                                         alt="Car Step Image"
                                       />
@@ -353,8 +355,8 @@ onMounted(() => {
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/3.png"
-                                        width="250"
-                                        height="250"
+                                          width="234"
+                                        height="234"
                                         class="img-fluid"
                                         alt="Car Step Image"
                                       />
@@ -368,8 +370,8 @@ onMounted(() => {
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/4.png"
-                                        width="250"
-                                        height="250"
+                                          width="234"
+                                        height="234"
                                         class="img-fluid"
                                         alt="Car Step Image"
                                       />
