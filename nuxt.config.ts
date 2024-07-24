@@ -8,13 +8,6 @@ export default defineNuxtConfig({
     optimizeCSS: true,
   },
 
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/'],
-    },
-  },
-
   experimental: {
     payloadExtraction: true,
   },
