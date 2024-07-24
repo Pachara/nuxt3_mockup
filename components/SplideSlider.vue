@@ -52,7 +52,6 @@ onMounted(() => {
                 format="webp"
                 quality="auto"
                 fit="cover"
-                placeholder
                 :data-splide-lazy="image"
                 alt="Slide Image"
               />
