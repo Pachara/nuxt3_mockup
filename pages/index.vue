@@ -62,8 +62,8 @@ onMounted(() => {
                                 <nuxt-img src="https://mockup-a0p.pages.dev/images/logo/logo_white2.png"
                                    format="webp" 
                                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                                   width="400px" 
-                                   height="114px"  
+                                   width="400" 
+                                   height="114"  
                                    class="main_logo"
                                    />
                             </div>
@@ -182,32 +182,32 @@ onMounted(() => {
                                                         <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                           format="webp" 
                                                           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px" 
-                                                          width="400px" height="400px" class="img-fluid" />
+                                                          width="400" height="400" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png"  format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400px"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  height="400" class="img-fluid" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400px"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  height="400px" class="img-fluid" />
+                                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car/car1.png" width="400"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  height="400" class="img-fluid" />
                                                     </div>
                                                 </div>
 
@@ -253,7 +253,7 @@ onMounted(() => {
                                     <div
                                         class="content border rounded-5 bg-light d-flex align-items-center justify-content-center overflow-hidden">
                                         <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/1.png" 
-                                          format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid"  />
+                                          format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid"  />
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +261,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/2.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/2.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5  d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/3.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/3.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +277,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border border-primary border-2 rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/4.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400px" height="400px" class="img-fluid" />
+                                        <nuxt-img src="https://mockup-a0p.pages.dev/images/car_step/4.png" format="webp"  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"  width="400" height="400" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
