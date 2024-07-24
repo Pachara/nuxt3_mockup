@@ -23,13 +23,13 @@ const images = ref([
     <div class="content-wrapper">
       <div class="media-container bg-carpluz-light d-flex flex-column">
         <header class="header-container row">
-          <div class="col-md-4 col-6 order-1 order-md-1">
+          <div class="col-md-3 col-6 order-1 order-md-1 ">
             <nuxt-img 
               provider="cloudinary"
               src="https://mockup-a0p.pages.dev/images/logo/logo_white.png"
-              width="379"
-              height="108"
               format="webp"
+              width="auto"
+              height="80"
               quality="auto"
               loading="eager"
               class="main-logo"
@@ -39,8 +39,8 @@ const images = ref([
           <div class="col-md-3 col-6 d-flex align-items-center justify-content-end order-2 order-md-3">
             <CallZone />
           </div>
-          <div class="col-md-5 col-12 d-flex align-items-center justify-content-start order-3 order-md-2">
-            <Marquee :images="randomImages" />
+          <div class="col-md-6 col-12 d-flex align-items-center justify-content-start order-3 order-md-2">
+            <MarqueeUsers :images="randomImages" />
           </div>
         </header>
         <main class="body-container row flex-grow-1">
@@ -87,8 +87,7 @@ const images = ref([
 }
 
 .main-logo {
-  width: 100%;
-  height: auto;
+  height: 80px;
 }
 
 .bg-carpluz-light {
@@ -117,7 +116,7 @@ const images = ref([
   }
 
   .main-logo {
-    width: 220px;
+    height: 60px;
   }
 
   .car-zone {
@@ -141,7 +140,7 @@ const images = ref([
   }
 
   .main-logo {
-    width: 180px;
+    height: 60px;
   }
 
   .car-zone {

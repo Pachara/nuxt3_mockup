@@ -118,39 +118,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12 rounded-4 p-4">
-                    <div class="row p-4">
-                        <div class="col-md-6 col-6  p-2" v-for="(image, index) in images" :key="index">
-                            <div class="square-div">
-                                <div
-                                    class="content border rounded-3 bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                    <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="image.src"
-                                        width="234" height="234" class="img-fluid" :alt="image.alt" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 fw-light p-4 margin-hack ">
-                    <div class="row p-4">
-                        <div class="col-md-6 col-12 p-2" v-for="(step, index) in steps" :key="index">
-                            <div class="square-div ">
-                                <div class="content rounded-3 d-flex justify-content-center overflow-hidden">
-                                    <div class="p-3" :class="{'border-animate' : index==3}">
-                                        <div class="fw-bold mb-1" style="font-size:2.5em;">
-                                            <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">{{
-                                                step.number }}</span>
-                                            {{ step.title }}
-                                        </div>
-                                        <p style="line-height:20px;">
-                                            {{ step.description }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
