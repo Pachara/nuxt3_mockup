@@ -3,9 +3,20 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
 
-  build: {
+  webpack: {
     extractCSS: true,
-    optimizeCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    }
   },
 
   experimental: {
@@ -31,13 +42,12 @@ export default defineNuxtConfig({
       baseURL: 'https://res.cloudinary.com/dixuugvyv/image/fetch/'
     },
     screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-      '2xl': 1536
+      xs: 320,      // Bootstrap's xs is <576px, customize as needed
+      sm: 576,      // Bootstrap's sm is 576px and up
+      md: 768,      // Bootstrap's md is 768px and up
+      lg: 992,      // Bootstrap's lg is 992px and up
+      xl: 1200,     // Bootstrap's xl is 1200px and up
+      xxl: 1400    // Bootstrap's xxl is 1400px and up
     },
     domains: ['mockup-a0p.pages.dev'],
     format: ['webp'],
@@ -53,4 +63,5 @@ export default defineNuxtConfig({
     inject: true,
     display: 'swap'
   }
+
 })
