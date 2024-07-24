@@ -64,7 +64,7 @@ onMounted(() => {
                     <div class="d-flex flex-column h-100">
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
-                              <nuxt-img
+                              <nuxt-img 
                                 provider="cloudinary"
                                 src="https://mockup-a0p.pages.dev/images/logo/logo_white.png"
                                 width="379"
@@ -121,11 +121,7 @@ onMounted(() => {
                                         </div>
 
                                         <p class="content-media fw-light m-0 pt-0">
-                                            ศูนย์บริการรถเช่านครศรีธรรมราช
-                                            มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
-                                            รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน
-                                            เรามีโปรแกรมส่วนลดคุ้มสุดๆ
-                                            มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
+                                            ศูนย์บริการรถเช่านครศรีธรรมราชมาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
                                         </p>
                                     </div>
                                     <div class="rounded-4 w-100 ms-0 me-0 d-flex overflow-hidden order-md-2 order-1"
@@ -135,7 +131,7 @@ onMounted(() => {
                                                 <ul class="splide__list h-100">
                                                     <li v-for="image in images" :key="image" class="splide__slide ">
                                                       <div class="image-container">
-                                                          <nuxt-img
+                                                          <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             :src="image" 
                                                             width="auto"
@@ -193,7 +189,7 @@ onMounted(() => {
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
 
-                                                          <nuxt-img
+                                                          <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                             width="172"
@@ -209,7 +205,7 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                      <nuxt-img
+                                                      <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                             width="172"
@@ -223,7 +219,7 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                      <nuxt-img
+                                                      <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                             width="172"
@@ -237,7 +233,7 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4 col-6 p-0">
                                                     <div class=" rounded-3">
-                                                      <nuxt-img
+                                                      <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                             width="172"
@@ -251,7 +247,7 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                      <nuxt-img
+                                                      <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                             width="172"
@@ -265,7 +261,7 @@ onMounted(() => {
                                                 </div>
                                                 <div class="col-md-4  col-6 p-0">
                                                     <div class=" rounded-3">
-                                                      <nuxt-img
+                                                      <nuxt-img loading="lazy"
                                                             provider="cloudinary"
                                                             src="https://mockup-a0p.pages.dev/images/car/car1.png"  
                                                             width="172"
@@ -319,7 +315,7 @@ onMounted(() => {
                                 <div class="square-div ">
                                     <div
                                         class="content border rounded-5 bg-light d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img
+                                        <nuxt-img loading="lazy"
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/1.png"
@@ -335,7 +331,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img
+                                        <nuxt-img loading="lazy"
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/2.png"
@@ -351,7 +347,7 @@ onMounted(() => {
                                 <div class="square-div">
                                     <div
                                         class="content border rounded-5  d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img
+                                        <nuxt-img loading="lazy"
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/3.png"
@@ -366,7 +362,7 @@ onMounted(() => {
                             <div class="col-md-6 col-6">
                                 <div class="square-div">
                                     <div class="content border border-primary border-2 rounded-5 d-flex align-items-center justify-content-center overflow-hidden">
-                                        <nuxt-img
+                                        <nuxt-img loading="lazy"
                                         provider="cloudinary"
                                         format="webp"
                                         src="https://mockup-a0p.pages.dev/images/car_step/4.png"
