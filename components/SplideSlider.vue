@@ -24,11 +24,7 @@ onMounted(() => {
     arrows: false,
     pagination: false,
     preloadPages: 1,
-    updateOnMove: true,
     throttle: 100,
-    waitForTransition: false,
-    wheelSleep: 50,
-    releaseWheel: true,
   });
 
   splideInstance.mount({ AutoScroll: $AutoScroll });
