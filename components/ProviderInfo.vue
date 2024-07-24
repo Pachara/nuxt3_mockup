@@ -1,0 +1,50 @@
+<template>
+    <div class="rounded-3 w-100 p-3 position-relative">
+      <div class="pb-0">
+        <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
+          <span class="badge rounded-pill text-bg-warning me-2 d-flex" style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
+            Premium Provider
+          </span>
+        </p>
+        <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น</h1>
+        <p class="keyword-media fw-light mb-1">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
+        <p class="text-bigger fs-5 d-flex">
+          <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-info text-white">
+            <i class="bi bi-facebook"></i>
+            <span class="fs-5 ps-1 pe-1">1,200 Likes</span>
+          </span>
+          <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-ddd">
+            <i class="bi bi-instagram"></i>
+            <span class="fs-5 ps-1 pe-1">1.5K Follows</span>
+          </span>
+        </p>
+      </div>
+      <p class="content-media fw-light m-0 pt-0">
+        ศูนย์บริการรถเช่านครศรีธรรมราชมาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช รับและคืนรถได้ที่สนามบิน และตัวเมือง ลูกค้าที่เคยใช้บริการเป็นเวลายาวนาน เรามีโปรแกรมส่วนลดคุ้มสุดๆ มาตรฐานที่ลูกค้าบอกต่อมากที่สุดในจังหวัดนครศรีธรรมราช
+      </p>
+    </div>
+  </template>
+  
+  <script setup>
+  </script>
+  
+  <style scoped>
+  .h1-media {
+    font-size: 2.3em;
+    line-height: 1.2;
+  }
+  
+  .content-media {
+    font-size: 1.3em;
+    line-height: 1.4;
+  }
+  
+  .text-bigger {
+    font-size: 1.25em;
+  }
+  
+  .keyword-media {
+    font-size: 1em;
+  }
+  </style>
+  
