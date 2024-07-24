@@ -6,21 +6,18 @@
                     <div class="rounded-3 border overflow-hidden">
                         <div class="row step-content-wrapper ">
                             <div class="col-md-12 col-6">
-                                <div class="square-div">
-                                    <div
-                                        class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
-                                            <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[0].number }}</span>
                                                 {{ steps[0].title }}
                                             </div>
-                                            <p class="fw-light m-0" style="line-height:20px;">
+                                            <p class="fw-normal m-0" style="line-height:20px;">
                                                 {{ steps[0].description }}
                                             </p>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                             <div class="col-md-12 col-6 p-0">
                                 <div class="image-container">
@@ -39,12 +36,12 @@
                                     <div
                                         class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
-                                            <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[1].number }}</span>
                                                 {{ steps[1].title }}
                                             </div>
-                                            <p class="fw-light m-0" style="line-height:20px;">
+                                            <p class="fw-normal m-0" style="line-height:20px;">
                                                 {{ steps[1].description }}
                                             </p>
                                         </div>
@@ -68,12 +65,12 @@
                                     <div
                                         class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
-                                            <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[2].number }}</span>
                                                 {{ steps[2].title }}
                                             </div>
-                                            <p class="fw-light m-0" style="line-height:20px;">
+                                            <p class="fw-normal m-0" style="line-height:20px;">
                                                 {{ steps[2].description }}
                                             </p>
                                         </div>
@@ -97,12 +94,12 @@
                                     <div
                                         class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
-                                            <div class="fw-bold mb-1" style="font-size:2.5em;">
+                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[3].number }}</span>
                                                 {{ steps[3].title }}
                                             </div>
-                                            <p class="fw-light m-0" style="line-height:20px;">
+                                            <p class="fw-normal  m-0" style="line-height:20px;">
                                                 {{ steps[3].description }}
                                             </p>
                                         </div>
@@ -132,7 +129,7 @@
   ];
   
   const steps = [
-    { number: "01", title: "จอง", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" },
+    { number: "01", title: "จอง", description: "ท่านสามารถจองรถยนต์ผ่านระบบออนไลน์แบบเรียลไทม์ โดยเลือกรุ่นรถและระบุวันที่ต้องการใช้งาน หรือหากต้องการความช่วยเหลือ ท่านสามารถติดต่อเจ้าหน้าที่โดยตรงผ่านโทรศัพท์หมายเลข 098-356-3638 หรือทาง LINE ไอดี @Carpluz เพื่อดำเนินการจองรถ" },
     { number: "02", title: "จ่าย", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" },
     { number: "03", title: "จบ", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" },
     { number: "04", title: "รับรถ", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" }
@@ -163,7 +160,7 @@
     }
   .page-container {
     align-items: center;
-    max-width:1124px;
+    max-width:1180px;
   }
   
   .square-div {
