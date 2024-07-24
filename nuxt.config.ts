@@ -18,11 +18,23 @@ export default defineNuxtConfig({
     '@splidejs/splide/css'
   ],
 
-  modules: ["@nuxtjs/google-fonts","@nuxt/image-edge"],
+  modules: ["@nuxt/image", "@nuxtjs/google-fonts"],
   image: {
-    provider: 'ipx',
-    formats: ['webp']
-  },
+    provider: 'cloudinary',
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dixuugvyv/image/upload/' // Replace dixuugvyv with your actual Cloudinary cloud name
+    },
+    domains: ['res.cloudinary.com'], // Add Cloudinary's domain to the allowed list
+    presets: {
+      default: {
+        modifiers: {
+          format: 'webp',
+          quality: 80,
+        }
+      }
+    }
+  }
+
   googleFonts: {
     families: {
       Kanit: [100, 200, 300, 400, 500, 600, 700, 800, 900],
