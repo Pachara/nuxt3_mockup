@@ -23,7 +23,6 @@ onMounted(() => {
     },
     arrows: false,
     pagination: false,
-    lazyLoad: 'nearby',
     preloadPages: 1,
     updateOnMove: true,
     throttle: 100,
