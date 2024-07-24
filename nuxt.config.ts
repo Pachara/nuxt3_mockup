@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   build: {
     extractCSS: true,
@@ -19,6 +19,10 @@ export default defineNuxtConfig({
     payloadExtraction: true,
   },
 
+  delayHydration: {
+    mode: 'init'
+  },
+
   css: [
     '@/assets/css/main.css',
     '@/assets/css/custom.css',
@@ -28,7 +32,7 @@ export default defineNuxtConfig({
     '@splidejs/splide/css'
   ],
 
-  modules: ["@nuxt/image", "@nuxtjs/google-fonts"],
+  modules: ["@nuxt/image", "@nuxtjs/google-fonts", "nuxt-delay-hydration"],
   image: {
     cloudinary: {
       baseURL: 'https://res.cloudinary.com/dixuugvyv/image/fetch/'
