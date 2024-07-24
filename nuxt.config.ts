@@ -3,6 +3,22 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
 
+  build: {
+    extractCSS: true,
+    optimizeCSS: true,
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
+
+  experimental: {
+    payloadExtraction: true,
+  },
+
   css: [
     '@/assets/css/main.css',
     '@/assets/css/custom.css',
