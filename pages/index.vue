@@ -57,7 +57,7 @@ onMounted(() => {
                         <div class="row header-container">
                             <div class="col-md-4 col-6 mb-2 order-1 order-md-1">
                                 <nuxt-img src="images/logo/logo_white.png" format="webp" width="400" 
-                                height="114"  class="main_logo" />
+                                  height="114"  class="main_logo" />
                             </div>
                             <div
                                 class="col-md-3 col-6 mb-2 ps-2 pe-2 d-flex align-items-center justify-content-end order-2 order-md-3 fw-normal">
@@ -73,7 +73,7 @@ onMounted(() => {
                             </div>
                             <div
                                 class="col-md-5 col-12 ps-2 pe-2 d-flex align-items-center justify-content-start order-3 order-md-2">
-                                <Marquee :images="randomImages" />
+                                  <Marquee :images="randomImages" />
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@ onMounted(() => {
                                             <div class="splide__track h-100">
                                                 <ul class="splide__list h-100">
                                                     <li v-for="image in images" :key="image" class="splide__slide ">
-                                                        <nuxt-img :src="image" alt="Slide Image" height="220px" />
+                                                        <nuxt-img :src="image" format="webp"  height="220px" alt="Slide Image"/>
                                                     </li>
                                                 </ul>
                                             </div>
