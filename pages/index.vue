@@ -9,13 +9,13 @@ definePageMeta({
 
 <template>
   <div>
-    <ContentsMain />
+    <LazyContentsMain />
 
 
     <CustomerReview />
     
 
-    <ContentsHowToRent2 />
+    <LazyContentsHowToRent2 />
   </div>
 </template>
 
