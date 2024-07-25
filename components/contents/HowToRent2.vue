@@ -5,7 +5,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12" >
+                            <div class="col-12 padding-hack" >
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                     <div class="step-content">
                                         <div class="fw-bold mb-2" style="font-size:2.5em;">
@@ -45,7 +45,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12">
+                            <div class="col-12 padding-hack">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                     <div class="step-content">
                                         <div class="fw-bold mb-2" style="font-size:2.5em;">
@@ -79,7 +79,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12">
+                            <div class="col-12 padding-hack">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                     <div class="step-content">
                                         <div class="fw-bold mb-2" style="font-size:2.5em;">
@@ -113,7 +113,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto  bg-warning">
-                            <div class="col-12">
+                            <div class="col-12 padding-hack">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                     <div class="step-content">
                                         <div class="fw-bold mb-2" style="font-size:2.5em;">
@@ -234,6 +234,10 @@
   
     .step-content {
       padding: 10px;
+      font-size:1.1em;
+    }
+    .padding-hack{
+        padding: 15px;
     }
   }
   </style>
