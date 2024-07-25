@@ -83,9 +83,9 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
                         <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12 bg-warning">
+                            <div class="col-12 bg-orange ">
                                     <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
-                                        <div class="step-content">
+                                        <div class="step-content ">
                                             <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[3].number }}</span>

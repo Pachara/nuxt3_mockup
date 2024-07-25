@@ -7,6 +7,9 @@
 .text-bigger{
     font-size:1.2em !important
 }
+.bg-orange{
+    background: #F19F10 !important
+}
 .text-000 { color: #000 !important; }
 .text-111 { color: #111 !important; }
 .text-222 { color: #222 !important; }
