@@ -59,6 +59,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="d-flex align-items-center border border-dark rounded-5 pe-2 me-2 bg-success">
+                                <button class="rounded-circle bg-success border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                    <i class="bi bi-cpu-fill fs-3"></i>
+                                </button>
+                                <span class="fw-bold fs-4 text-white">จองรีลไทม์ออนไลน์</span>
+                                </div>
+                            </div>
                             <div class="col-12 p-0">
                                 <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[1].src"
@@ -83,6 +91,14 @@
                                             {{ steps[2].description }}
                                         </p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="d-flex align-items-center border border-dark rounded-5 pe-2 me-2 bg-warning">
+                                <button class="rounded-circle bg-warning border-0 text-dark me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                    <i class="bi bi-credit-card-2-front-fill fs-3"></i>
+                                </button>
+                                <span class="fw-bold fs-4 text-dark">ทำลายน้ำเอกสาร</span>
                                 </div>
                             </div>
                             <div class="col-12 p-0">
@@ -116,7 +132,7 @@
                                 <button class="rounded-circle bg-dark border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
                                     <i class="bi bi-geo-alt-fill fs-3"></i>
                                 </button>
-                                <span class="fw-bold fs-4 text-white">มี GPS ทุกคัน</span>
+                                <span class="fw-bold fs-4 text-white">รถมี GPS ทุกคัน</span>
                                 </div>
                             </div>
                             <div class="col-12 p-0">
