@@ -1,4 +1,6 @@
 <script setup>
+import CustomerReview from '~/components/contents/CustomerReview.vue';
+
 
 definePageMeta({
   layout: 'main',
@@ -9,9 +11,9 @@ definePageMeta({
   <div>
     <ContentsMain />
 
-    <div class="text-center fw-light p-4 sriracha" style="font-size: 2.5em;">
-      "เช่ารถ เรื่องง่าย"
-    </div>
+
+    <CustomerReview />
+    
 
     <ContentsHowToRent2 />
   </div>

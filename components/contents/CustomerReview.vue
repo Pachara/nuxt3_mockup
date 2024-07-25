@@ -1,0 +1,27 @@
+<template>
+    <div class="d-flex justify-content-center">
+        <div class="page-container row d-flex justify-content-center w-100 pt-4 pb-4">
+            <div class="row">
+               <div class="col-md-6 col-12 text-center ps-4 pe-4 position-relative">
+                   <div class="fs-3 fw-thin">
+                   </div>
+                </div>
+                <div class="col-md-6 col-12 position-relative">
+                    <CustomerRating />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+  
+  <script setup>
+
+  
+
+  </script>
+  
+  <style scoped>
+  
+  </style>
+  
