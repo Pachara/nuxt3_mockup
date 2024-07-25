@@ -32,7 +32,6 @@
                                 </button>
                                 <span class="fw-bold fs-4 text-white">ไลน์</span>
                                 </div>
-                                
                             </div>
                             <div class="col-12 p-0">
                                 <div class="w-100">
@@ -97,8 +96,8 @@
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden transition-wrapper">
-                        <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12 bg-orange">
+                        <div class="row step-content-wrapper w-100 m-auto  bg-orange">
+                            <div class="col-12">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                     <div class="step-content">
                                         <div class="fw-bold mb-2" style="font-size:2.5em;">
@@ -110,6 +109,14 @@
                                             {{ steps[3].description }}
                                         </p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="d-flex align-items-center border border-dark rounded-5 pe-2 me-2 bg-555">
+                                <button class="rounded-circle bg-dark border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                    <i class="bi bi-geo-alt-fill fs-3"></i>
+                                </button>
+                                <span class="fw-bold fs-4 text-white">มี GPS ทุกคัน</span>
                                 </div>
                             </div>
                             <div class="col-12 p-0">
