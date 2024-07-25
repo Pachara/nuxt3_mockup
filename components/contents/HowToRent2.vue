@@ -3,23 +3,38 @@
         <div class="page-container row d-flex justify-content-center w-100">
             <div class="row">
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden">
+                    <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12">
-                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
-                                        <div class="step-content">
-                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
-                                                <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
-                                                    {{ steps[0].number }}</span>
-                                                {{ steps[0].title }}
-                                            </div>
-                                            <p class="fw-normal  m-0" style="line-height:20px;">
-                                                {{ steps[0].description }}
-                                            </p>
+                            <div class="col-12" >
+                                <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="step-content">
+                                        <div class="fw-bold mb-2" style="font-size:2.5em;">
+                                            <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
+                                                {{ steps[0].number }}</span>
+                                            {{ steps[0].title }}
                                         </div>
+                                        <p class="fw-normal m-0" style="line-height:20px;">
+                                            {{ steps[0].description }}
+                                        </p>
                                     </div>
+                                </div>
                             </div>
-                            <div class="col-12  p-0">
+                            <div class="col-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="d-flex align-items-center border border-success rounded-5 pe-2 me-2 bg-eee">
+                                <button class="rounded-circle bg-success border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                    <i class="bi bi-telephone-fill fs-4"></i>
+                                </button>
+                                <span class="fw-bold fs-4">โทรจอง</span>
+                                </div>
+                                <div class="d-flex align-items-center border border-success rounded-5 pe-2 bg-success">
+                                <button class="rounded-circle bg-success  border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                    <i class="bi bi-line text-white" style="font-size:2.3em;margin-top:4px;"></i>
+                                </button>
+                                <span class="fw-bold fs-4 text-white">ไลน์</span>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 p-0">
                                 <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[0].src"
                                         :alt="images[0].alt" class="cover-image" />
@@ -29,23 +44,23 @@
                     </div>
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden">
+                    <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12">
-                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
-                                        <div class="step-content">
-                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
-                                                <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
-                                                    {{ steps[1].number }}</span>
-                                                {{ steps[1].title }}
-                                            </div>
-                                            <p class="fw-normal  m-0" style="line-height:20px;">
-                                                {{ steps[1].description }}
-                                            </p>
+                                <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="step-content">
+                                        <div class="fw-bold mb-2" style="font-size:2.5em;">
+                                            <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
+                                                {{ steps[1].number }}</span>
+                                            {{ steps[1].title }}
                                         </div>
+                                        <p class="fw-normal m-0" style="line-height:20px;">
+                                            {{ steps[1].description }}
+                                        </p>
                                     </div>
+                                </div>
                             </div>
-                            <div class="col-12  p-0">
+                            <div class="col-12 p-0">
                                 <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[1].src"
                                         :alt="images[1].alt" class="cover-image" />
@@ -55,23 +70,23 @@
                     </div>
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden">
+                    <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12">
-                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
-                                        <div class="step-content">
-                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
-                                                <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
-                                                    {{ steps[2].number }}</span>
-                                                {{ steps[2].title }}
-                                            </div>
-                                            <p class="fw-normal  m-0" style="line-height:20px;">
-                                                {{ steps[2].description }}
-                                            </p>
+                                <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="step-content">
+                                        <div class="fw-bold mb-2" style="font-size:2.5em;">
+                                            <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
+                                                {{ steps[2].number }}</span>
+                                            {{ steps[2].title }}
                                         </div>
+                                        <p class="fw-normal m-0" style="line-height:20px;">
+                                            {{ steps[2].description }}
+                                        </p>
                                     </div>
+                                </div>
                             </div>
-                            <div class="col-12  p-0">
+                            <div class="col-12 p-0">
                                 <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[2].src"
                                         :alt="images[2].alt" class="cover-image" />
@@ -81,23 +96,23 @@
                     </div>
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden">
+                    <div class="rounded-3 border overflow-hidden transition-wrapper">
                         <div class="row step-content-wrapper w-100 m-auto">
-                            <div class="col-12 bg-orange ">
-                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
-                                        <div class="step-content ">
-                                            <div class="fw-bold mb-2" style="font-size:2.5em;">
-                                                <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
-                                                    {{ steps[3].number }}</span>
-                                                {{ steps[3].title }}
-                                            </div>
-                                            <p class="fw-normal  m-0" style="line-height:20px;">
-                                                {{ steps[3].description }}
-                                            </p>
+                            <div class="col-12 bg-orange">
+                                <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="step-content">
+                                        <div class="fw-bold mb-2" style="font-size:2.5em;">
+                                            <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
+                                                {{ steps[3].number }}</span>
+                                            {{ steps[3].title }}
                                         </div>
+                                        <p class="fw-normal m-0" style="line-height:20px;">
+                                            {{ steps[3].description }}
+                                        </p>
                                     </div>
+                                </div>
                             </div>
-                            <div class="col-12  p-0">
+                            <div class="col-12 p-0">
                                 <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[3].src"
                                         :alt="images[3].alt" class="cover-image" />
@@ -130,76 +145,47 @@
   
   <style scoped>
   .image-container {
-  width: 100%;
-  height: 100%; /* This will make it take the full height of its parent */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.cover-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top left;
-}
-      .step{
-        padding:10px;
-    }
-    .step-content{
-        padding:20px;
-    }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+  }
+  
+  .step {
+    padding: 10px;
+  }
+  
+  .step-content {
+    padding: 20px;
+  }
+  
   .page-container {
     align-items: center;
-    max-width:1180px;
+    max-width: 1180px;
   }
   
-  .square-div {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* This creates a 1:1 aspect ratio */
+  .transition-wrapper {
+    transition: all 0.3s ease;
   }
   
-  .square-div .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-
-  
-  .border-animate {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(90deg, orange 50%, transparent 50%), 
-                linear-gradient(90deg, orange 50%, transparent 50%), 
-                linear-gradient(0deg, orange 50%, transparent 50%), 
-                linear-gradient(0deg, orange 50%, transparent 50%);
-    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
-    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
-    border-radius: 5px;
-    padding: 10px;
-    animation: dash 5s linear infinite;
-  }
-  
-  @keyframes dash {
-    to {
-      background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
-    }
+  .transition-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
   @media (max-width: 1200px) {
     .page-container {
       align-items: flex-start;
       padding: 0;
-    }
-  
-    .margin-hack {
-      margin-top: 20px;
     }
   }
   
@@ -209,37 +195,22 @@
       padding: 0;
     }
   
-    .square-div {
-      padding-bottom: 0 !important;
+    .step {
+      padding: 10px;
     }
   
-    .square-div .content {
-      position: relative !important;
+    .step-content {
+      padding: 10px;
     }
-  
-    .margin-hack {
-      margin-top: 20px;
-    }
-    .step{
-        padding:10px;
-    }
-    .step-content{
-        padding:10px;
-    }
-
   }
   
   @media (max-width: 480px) {
-    .margin-hack {
-      margin-top: 20px;
+    .step {
+      padding: 10px;
     }
-    .step{
-        padding:10px;
+  
+    .step-content {
+      padding: 10px;
     }
-    .step-content{
-        padding:10px;
-    }
-
   }
   </style>
-  
