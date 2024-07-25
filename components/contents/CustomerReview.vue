@@ -8,7 +8,7 @@
                    </div>
                 </div>
                 <div class="col-md-6 col-12 position-relative">
-                    <CustomerRating />
+                    <LazyCustomerRating />
                 </div>
 
             </div>
