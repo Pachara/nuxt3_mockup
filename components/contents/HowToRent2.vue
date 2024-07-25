@@ -95,7 +95,7 @@
                             </div>
                             <div class="col-12 d-flex justify-content-center align-items-center mb-3">
                                 <div class="d-flex align-items-center border border-dark rounded-5 pe-2 me-2 bg-warning">
-                                <button class="rounded-circle bg-warning border-0 text-dark me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                <button class="rounded-circle bg-white border-0 text-dark me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
                                     <i class="bi bi-credit-card-2-front-fill fs-3"></i>
                                 </button>
                                 <span class="fw-bold fs-4 text-dark">ทำลายน้ำเอกสาร</span>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden transition-wrapper">
-                        <div class="row step-content-wrapper w-100 m-auto  bg-orange">
+                        <div class="row step-content-wrapper w-100 m-auto  bg-warning">
                             <div class="col-12">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                     <div class="step-content">
@@ -128,8 +128,8 @@
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-center align-items-center mb-3">
-                                <div class="d-flex align-items-center border border-dark rounded-5 pe-2 me-2 bg-555">
-                                <button class="rounded-circle bg-dark border-0 text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
+                                <div class="d-flex align-items-center border border-white rounded-5 pe-2 me-2 bg-555">
+                                <button class="rounded-circle bg-dark border-0  text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
                                     <i class="bi bi-geo-alt-fill fs-3"></i>
                                 </button>
                                 <span class="fw-bold fs-4 text-white">รถมี GPS ทุกคัน</span>
