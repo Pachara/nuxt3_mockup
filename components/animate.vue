@@ -3,7 +3,6 @@
   </template>
   
   <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
   import lottie from 'lottie-web'
   
   // Import your JSON animation file
