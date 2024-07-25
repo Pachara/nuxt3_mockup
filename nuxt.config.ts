@@ -1,4 +1,4 @@
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = false;
 const devHost = 'http://localhost:3000'
 
 export default defineNuxtConfig({

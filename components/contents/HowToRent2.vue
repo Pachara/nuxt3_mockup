@@ -4,23 +4,23 @@
             <div class="row">
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
-                        <div class="row step-content-wrapper ">
+                        <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12">
-                                    <div class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
                                             <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[0].number }}</span>
                                                 {{ steps[0].title }}
                                             </div>
-                                            <p class="fw-normal m-0" style="line-height:20px;">
+                                            <p class="fw-normal  m-0" style="line-height:20px;">
                                                 {{ steps[0].description }}
                                             </p>
                                         </div>
                                     </div>
                             </div>
-                            <div class="col-12 p-0">
-                                <div class="image-container">
+                            <div class="col-12  p-0">
+                                <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[0].src"
                                         :alt="images[0].alt" class="cover-image" />
                                 </div>
@@ -30,26 +30,23 @@
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
-                        <div class="row step-content-wrapper ">
+                        <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12">
-                                <div class="square-div">
-                                    <div
-                                        class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
                                             <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[1].number }}</span>
                                                 {{ steps[1].title }}
                                             </div>
-                                            <p class="fw-normal m-0" style="line-height:20px;">
+                                            <p class="fw-normal  m-0" style="line-height:20px;">
                                                 {{ steps[1].description }}
                                             </p>
                                         </div>
                                     </div>
-                                </div>
                             </div>
-                            <div class="col-12 p-0">
-                                <div class="image-container">
+                            <div class="col-12  p-0">
+                                <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[1].src"
                                         :alt="images[1].alt" class="cover-image" />
                                 </div>
@@ -59,26 +56,23 @@
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
-                        <div class="row step-content-wrapper ">
+                        <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12">
-                                <div class="square-div">
-                                    <div
-                                        class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
                                             <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                     {{ steps[2].number }}</span>
                                                 {{ steps[2].title }}
                                             </div>
-                                            <p class="fw-normal m-0" style="line-height:20px;">
+                                            <p class="fw-normal  m-0" style="line-height:20px;">
                                                 {{ steps[2].description }}
                                             </p>
                                         </div>
                                     </div>
-                                </div>
                             </div>
-                            <div class="col-12 p-0">
-                                <div class="image-container">
+                            <div class="col-12  p-0">
+                                <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[2].src"
                                         :alt="images[2].alt" class="cover-image" />
                                 </div>
@@ -88,11 +82,9 @@
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
-                        <div class="row step-content-wrapper ">
-                            <div class="col-12">
-                                <div class="square-div">
-                                    <div
-                                        class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
+                        <div class="row step-content-wrapper w-100 m-auto">
+                            <div class="col-12 bg-warning">
+                                    <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
                                             <div class="fw-bold mb-2" style="font-size:2.5em;">
                                                 <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
@@ -104,10 +96,9 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                             <div class="col-12  p-0">
-                                <div class="image-container">
+                                <div class="w-100">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[3].src"
                                         :alt="images[3].alt" class="cover-image" />
                                 </div>
@@ -133,7 +124,7 @@
     { number: "01", title: "จอง", description: "ท่านสามารถจองรถยนต์ผ่านระบบออนไลน์แบบเรียลไทม์ โดยเลือกรุ่นรถและระบุวันที่ต้องการใช้งาน หรือหากต้องการความช่วยเหลือ ท่านสามารถติดต่อเจ้าหน้าที่โดยตรงผ่านโทรศัพท์หมายเลข 098-356-3638 หรือทาง LINE ไอดี @Carpluz เพื่อดำเนินการจองรถ" },
     { number: "02", title: "จ่าย", description: "ชำระเงินออนไลน์ปลอดภัยผ่าน Payment Gateway ที่เชื่อถือได้ พร้อมระบบ Secure Payment รับประกันความพึงพอใจด้วยนโยบายคืนเงินและเปลี่ยนรถทันที เพื่อประสบการณ์เช่ารถที่ไร้กังวลของคุณ 'เช่ารถ เรื่องง่าย' ปลอดภัยไร้กังวล" },
     { number: "03", title: "จบ", description: "ส่งเอกสารสำคัญอย่างปลอดภัยผ่านระบบ Secure Payment รับรองความเป็นส่วนตัวสูงสุด ไม่มีการบันทึกหรือเปลี่ยนแปลงข้อมูล พร้อมระบบลายน้ำอัตโนมัติเพื่อป้องกันการรั่วไหล ใช้ได้กับใบขับขี่ บัตรประชาชน และตั๋วเครื่องบิน" },
-    { number: "04", title: "รับรถ", description: "รับประกันความพร้อมของรถด้วยการตรวจสอบอย่างละเอียดก่อนส่งมอบ พร้อมบริการจัดส่งถึงที่โดยพนักงานมืออาชีพที่ผ่านการฝึกอบรม พร้อมให้คำแนะนำการใช้งานรถอย่างละเอียด ด้วยความสุภาพและเป็นมิตร เพื่อมอบประสบการณ์การเช่ารถที่เหนือระดับให้กับท่าน" }
+    { number: "04", title: "รับรถ", description: "รับประกันความพร้อมของรถด้วยการตรวจสอบอย่างละเอียดก่อนส่งมอบ พร้อมบริการจัดส่งโดยพนักงานมืออาชีพผ่านการฝึกอบรม พร้อมแนะนำการใช้งานรถอย่างละเอียด ด้วยความสุภาพและเป็นมิตร เพื่อมอบประสบการณ์การเช่ารถที่เหนือระดับ" }
   ];
   </script>
   
@@ -157,7 +148,7 @@
         padding:10px;
     }
     .step-content{
-        padding:30px;
+        padding:20px;
     }
   .page-container {
     align-items: center;
@@ -230,7 +221,7 @@
       margin-top: 20px;
     }
     .step{
-        padding:0px;
+        padding:10px;
     }
     .step-content{
         padding:10px;
@@ -243,7 +234,7 @@
       margin-top: 20px;
     }
     .step{
-        padding:0px;
+        padding:10px;
     }
     .step-content{
         padding:10px;
