@@ -5,7 +5,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
                         <div class="row step-content-wrapper ">
-                            <div class="col-md-12 col-6">
+                            <div class="col-12">
                                     <div class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
                                         <div class="step-content">
                                             <div class="fw-bold mb-2" style="font-size:2.5em;">
@@ -19,7 +19,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <div class="col-md-12 col-6 p-0">
+                            <div class="col-12 p-0">
                                 <div class="image-container">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[0].src"
                                         :alt="images[0].alt" class="cover-image" />
@@ -31,7 +31,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
                         <div class="row step-content-wrapper ">
-                            <div class="col-md-12 col-6">
+                            <div class="col-12">
                                 <div class="square-div">
                                     <div
                                         class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-6 p-0">
+                            <div class="col-12 p-0">
                                 <div class="image-container">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[1].src"
                                         :alt="images[1].alt" class="cover-image" />
@@ -60,7 +60,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
                         <div class="row step-content-wrapper ">
-                            <div class="col-md-12 col-6">
+                            <div class="col-12">
                                 <div class="square-div">
                                     <div
                                         class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-6 p-0">
+                            <div class="col-12 p-0">
                                 <div class="image-container">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[2].src"
                                         :alt="images[2].alt" class="cover-image" />
@@ -89,7 +89,7 @@
                 <div class="step col-md-3 col-12 mb-3">
                     <div class="rounded-3 border overflow-hidden">
                         <div class="row step-content-wrapper ">
-                            <div class="col-md-12 col-6">
+                            <div class="col-12">
                                 <div class="square-div">
                                     <div
                                         class="content rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -106,7 +106,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-6 p-0">
+                            <div class="col-12  p-0">
                                 <div class="image-container">
                                     <nuxt-img loading="lazy" provider="cloudinary" format="webp" :src="images[3].src"
                                         :alt="images[3].alt" class="cover-image" />
@@ -130,9 +130,9 @@
   
   const steps = [
     { number: "01", title: "จอง", description: "ท่านสามารถจองรถยนต์ผ่านระบบออนไลน์แบบเรียลไทม์ โดยเลือกรุ่นรถและระบุวันที่ต้องการใช้งาน หรือหากต้องการความช่วยเหลือ ท่านสามารถติดต่อเจ้าหน้าที่โดยตรงผ่านโทรศัพท์หมายเลข 098-356-3638 หรือทาง LINE ไอดี @Carpluz เพื่อดำเนินการจองรถ" },
-    { number: "02", title: "จ่าย", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" },
-    { number: "03", title: "จบ", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" },
-    { number: "04", title: "รับรถ", description: "โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638 โทรมาจอง หรือจะไลน์มาสอบถามได้ทุกช่องทาง ไลน์ @CARPLUZ หรือ โทร. 098-356-3638" }
+    { number: "02", title: "จ่าย", description: "ชำระเงินออนไลน์ปลอดภัยผ่าน Payment Gateway ที่เชื่อถือได้ พร้อมระบบ Secure Payment รับประกันความพึงพอใจด้วยนโยบายคืนเงินและเปลี่ยนรถทันที เพื่อประสบการณ์เช่ารถที่ไร้กังวลของคุณ 'เช่ารถ เรื่องง่าย' ปลอดภัยไร้กังวล" },
+    { number: "03", title: "จบ", description: "ส่งเอกสารสำคัญอย่างปลอดภัยผ่านระบบ Secure Payment รับรองความเป็นส่วนตัวสูงสุด ไม่มีการบันทึกหรือเปลี่ยนแปลงข้อมูล พร้อมระบบลายน้ำอัตโนมัติเพื่อป้องกันการรั่วไหล ใช้ได้กับใบขับขี่ บัตรประชาชน และตั๋วเครื่องบิน" },
+    { number: "04", title: "รับรถ", description: "รับประกันความพร้อมของรถด้วยการตรวจสอบอย่างละเอียดก่อนส่งมอบ พร้อมบริการจัดส่งถึงที่โดยพนักงานมืออาชีพที่ผ่านการฝึกอบรม พร้อมให้คำแนะนำการใช้งานรถอย่างละเอียด ด้วยความสุภาพและเป็นมิตร เพื่อมอบประสบการณ์การเช่ารถที่เหนือระดับให้กับท่าน" }
   ];
   </script>
   
