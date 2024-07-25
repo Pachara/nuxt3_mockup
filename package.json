@@ -21,6 +21,7 @@
     "bootstrap-icons": "^1.11.3",
     "google-fonts": "^1.0.0",
     "gsap": "^3.12.5",
+    "lottie-web": "^5.12.2",
     "module": "^1.2.5",
     "nuxi": "^3.12.0",
     "nuxt": "^3.12.3",

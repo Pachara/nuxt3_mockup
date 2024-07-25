@@ -32,7 +32,7 @@ const sliderItems = ref([
 const sliderItemRefs = ref([])
 
 const config = reactive({
-  gap: 12,
+  gap: -12,
   activeSliderMargin: 65
 })
 

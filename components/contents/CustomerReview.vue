@@ -4,6 +4,7 @@
             <div class="row">
                <div class="col-md-6 col-12 text-center ps-4 pe-4 position-relative">
                    <div class="fs-3 fw-thin">
+                    <Animate />
                    </div>
                 </div>
                 <div class="col-md-6 col-12 position-relative">
@@ -22,6 +23,10 @@
   </script>
   
   <style scoped>
+   .page-container {
+    align-items: center;
+    max-width: 1180px;
+  }
   
   </style>
   
