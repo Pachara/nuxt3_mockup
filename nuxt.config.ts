@@ -1,5 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+const isDev = process.env.NODE_ENV === 'development'
+const devHost = 'http://localhost:3000'
+
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      trailingSlash: false,
+      baseURL: isDev ? devHost : "https://mockup-a0p.pages.dev",
+    },
+  },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
 
