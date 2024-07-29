@@ -1,8 +1,8 @@
 <template>
-    <div class="d-flex justify-content-center pb-4">
+    <div class="d-flex justify-content-center pb-4 ">
         <div class="page-container row d-flex justify-content-center w-100">
             <div class="row">
-                <div class="step col-md-3 col-12 mb-3">
+                <div class="step col-md-3 col-12 mb-3 mt-0 pt-0">
                     <div class="rounded-4 border overflow-hidden transition-wrapper" style="border-color:#ddd!important">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12 padding-hack" >
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step col-md-3 col-12 mb-3">
+                <div class="step col-md-3 col-12 mb-3 mt-0 pt-0">
                     <div class="rounded-4 border overflow-hidden transition-wrapper" style="border-color:#ddd!important">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12 padding-hack">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step col-md-3 col-12 mb-3">
+                <div class="step col-md-3 col-12 mb-3 mt-0 pt-0">
                     <div class="rounded-4 border overflow-hidden transition-wrapper" style="border-color:#ddd!important">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12 padding-hack">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step col-md-3 col-12 mb-3">
+                <div class="step col-md-3 col-12 mb-3 mt-0 pt-0">
                     <div class="rounded-4 border overflow-hidden transition-wrapper" style="border:2px solid #333!important">
                         <div class="row step-content-wrapper w-100 m-auto  bg-warning">
                             <div class="col-12 padding-hack">
@@ -215,7 +215,7 @@
   @media (max-width: 768px) {
     .page-container {
       align-items: flex-start;
-      padding: 0;
+      padding-right:15px;
     }
   
     .step {
@@ -228,6 +228,11 @@
   }
   
   @media (max-width: 480px) {
+    .page-container {
+        padding-left:15px;
+        padding-right:15px;
+    }
+
     .step {
       padding: 10px;
     }

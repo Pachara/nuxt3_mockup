@@ -39,8 +39,6 @@ export default defineNuxtConfig({
     '@/assets/css/main.css',
     '@/assets/css/custom.css',
     '@/assets/scss/main.scss',
-    '@/assets/scss/slogan.scss',
-    '@/assets/css/blobz.min.css',
     '@/assets/css/car_animate.css',
     '@splidejs/splide/css'
   ],

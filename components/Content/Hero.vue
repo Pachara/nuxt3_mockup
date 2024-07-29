@@ -19,7 +19,7 @@ const images = ref([
 </script>
 
 <template>
-  <div class="page-container d-flex justify-content-center min-vh-100">
+  <div class="page-container d-flex justify-content-center min-vh-100 ">
     <div class="content-wrapper">
       <div class="media-container bg-carpluz-light d-flex flex-column">
         <header class="header-container row">
