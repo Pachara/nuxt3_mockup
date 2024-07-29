@@ -8,11 +8,11 @@
         <div class="col-12 text-center fs-1 fw-bold">
           12,000+ Positive Customer Reviews Guarantee
         </div>
-        <div class="col-md-6 col-12 d-flex align-items-center justify-content-center pt-4">
+        <div class="col-md-8 col-12 d-flex align-items-center justify-content-center pt-4">
           <CustomerAnimation />
         </div>
-        <div class="col-md-6 col-12 ps-2 pe-2 d-flex justify-content-center align-items-center py-4" >
-          <div class="overflow-hidden w-100" style="height:300px;">
+        <div class="col-md-4 col-12 ps-2 pe-2 d-flex justify-content-center align-items-center py-4 pt-5" >
+          <div class="overflow-hidden w-100" style="height:320px;">
             <HeroVerticalSlider />
           </div>
           <!-- <LazyCustomerRating /> -->

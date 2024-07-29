@@ -35,13 +35,13 @@ onMounted(() => {
 
 <template>
   <div class="w-100 ms-0 me-0 d-flex overflow-hidden order-md-2 order-1">
-    <div class="splide w-100 m-auto" ref="splide">
+    <div class="splide w-100 " ref="splide">
       <div class="splide__track">
         <ul class="splide__list">
           <li v-for="(i,k) in 8" class="splide__slide" :key="k">
             <div class="box-container bg-success rounded-4 border border-3">
               <div class="box-content text-white">
-                <nuxt-img src="https://randomuser.me/api/portraits/thumb/men/32.jpg" class="rounded-circle m-1 border border-2" width="40px" height="40px" style="float:left"/>
+                <nuxt-img src="https://randomuser.me/api/portraits/thumb/men/32.jpg" class="rounded-circle m-1 me-2 border border-2" width="40px" height="40px" style="float:left"/>
                 "ท่านสามารถจองรถยนต์ผ่านระบบออนไลน์แบบเรียลไทม์ โดยเลือกรุ่นรถและระบุวันที่ต้องการใช้งาน หรือหากต้องการความช่วยเหลือ {{ i }}"
               </div>
             </div>
@@ -79,5 +79,18 @@ onMounted(() => {
 .splide__list {
   display: flex;
   flex-direction: column;
+}
+
+  
+@media (max-width: 768px) {
+.splide{
+  margin:auto;
+}
+  }
+
+  @media (max-width: 480px) {
+    .splide{
+  margin:auto;
+}
 }
 </style>
