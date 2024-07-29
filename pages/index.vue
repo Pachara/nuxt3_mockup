@@ -1,24 +1,12 @@
 <script setup>
-import CustomerReview from '~/components/contents/CustomerReview.vue';
-
-
-definePageMeta({
-  layout: 'main',
-});
+  definePageMeta({ layout: 'main' });
 </script>
 
 <template>
   <div>
-    <LazyContentsMain />
-
-
-    <CustomerReview />
-    
-
-    <LazyContentsHowToRent2 />
+    <LazyContentHero />
+    <LazyContentCustomerReview />
+    <LazyContentHowToRent />
   </div>
 </template>
 
-<style scoped>
-
-</style>

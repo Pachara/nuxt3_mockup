@@ -3,7 +3,7 @@
         <div class="page-container row d-flex justify-content-center w-100">
             <div class="row">
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden transition-wrapper">
+                    <div class="rounded-4 border overflow-hidden transition-wrapper" style="border-color:#ddd!important">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12 padding-hack" >
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden transition-wrapper">
+                    <div class="rounded-4 border overflow-hidden transition-wrapper" style="border-color:#ddd!important">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12 padding-hack">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden transition-wrapper">
+                    <div class="rounded-4 border overflow-hidden transition-wrapper" style="border-color:#ddd!important">
                         <div class="row step-content-wrapper w-100 m-auto">
                             <div class="col-12 padding-hack">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="step col-md-3 col-12 mb-3">
-                    <div class="rounded-3 border overflow-hidden transition-wrapper">
+                    <div class="rounded-4 border overflow-hidden transition-wrapper" style="border:2px solid #333!important">
                         <div class="row step-content-wrapper w-100 m-auto  bg-warning">
                             <div class="col-12 padding-hack">
                                 <div class="rounded-3 d-flex justify-content-center align-items-center overflow-hidden">
@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-center align-items-center mb-3">
-                                <div class="d-flex align-items-center border border-white rounded-5 pe-2 me-2 bg-555">
+                                <div class="d-flex align-items-center border border-dark rounded-5 pe-2 me-2 bg-555">
                                 <button class="rounded-circle bg-dark border-0  text-white me-1 d-flex justify-content-center align-items-center" style="width:40px;height:40px;">
                                     <i class="bi bi-geo-alt-fill fs-3"></i>
                                 </button>

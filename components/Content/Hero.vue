@@ -36,20 +36,20 @@ const images = ref([
               alt="Company Logo"
             />
           </div>
-          <div class="col-md-3 col-6 d-flex align-items-center justify-content-end order-2 order-md-3">
-            <CallZone />
+          <div class="col-md-4 col-6 d-flex align-items-center justify-content-end order-2 order-md-3 pe-4">
+            <HeroCallZone />
           </div>
-          <div class="col-md-6 col-12 d-flex align-items-center justify-content-start order-3 order-md-2">
-            <MarqueeUsers :images="randomImages" />
+          <div class="col-md-5 col-12 d-flex align-items-center justify-content-start order-3 order-md-2">
+            <HeroMarqueeUsers :images="randomImages" />
           </div>
         </header>
         <main class="body-container row flex-grow-1">
           <div class="col-md-6 col-12 d-flex flex-column">
-            <ProviderInfo class="provider-info order-md-1 order-2" />
-            <SplideSlider :images="images" class="splide-slider order-md-2 order-1" />
+            <HeroProviderInfo class="provider-info order-md-1 order-2" />
+            <HeroSplideSlider :images="images" class="splide-slider order-md-2 order-1" />
           </div>
           <div class="col-md-6 col-12 car-zone">
-            <CarBox />
+            <HeroCarBox />
           </div>
         </main>
       </div>
