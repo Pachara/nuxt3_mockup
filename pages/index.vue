@@ -5,8 +5,9 @@
 <template>
   <div>
     <LazyContentHero />
-    <LazyContentCustomerReview />
+    <LazyContentSlowgan />
     <LazyContentHowToRent />
+    <LazyContentCustomerReview />
   </div>
 </template>
 
