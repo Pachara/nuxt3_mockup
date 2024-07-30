@@ -23,7 +23,7 @@
               </div>
               <div class="col-12">
 
-                <img :src="`${config.public.baseURL}/images/car_insurance1.jpg`"  class="img-fluid"/>
+                <img :src="`/images/car_insurance1.png`"  class="img-fluid"/>
                
               </div>
               <div class="col-12 padding-added" >
@@ -42,7 +42,7 @@
             <div class="row">
               <div class="col-12 p-3 bg-333 text-white" ><h2 class="p-0 m-0 " style="font-size:3em;">กรณีเกิดอุบัติเหตุ </h2></div>
               <div class="col-12 p-0 border">
-                  <img :src="`${config.public.baseURL}/images/car_insurance3.jpg`" class="img-fluid">
+                  <img :src="`${config.public.baseURL}/images/car_insurance3.png`" class="img-fluid">
                   <div class="p-3 position-relative" style="background:#CFBEAC">
                 <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">01 รีบติดต่อเจ้าหน้าที่ของเรา</h2>
                 <p class="text-333 position-relative p-1 pb-0 mb-0" style="line-height:20px;">
@@ -51,7 +51,7 @@
               </div>
               </div>
               <div class="col-12 p-0 border">
-                  <img :src="`${config.public.baseURL}/images/car_insurance7.jpg`" class="img-fluid">
+                  <img :src="`${config.public.baseURL}/images/car_insurance7.png`" class="img-fluid">
                   <div class="p-3 position-relative" style="background:#CFBEAC">
                 <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">02 รอเจ้าหน้าที่ประกันภัย</h2>
                 <p class="text-333 position-relative p-1 pb-0 mb-0" style="line-height:20px;">
