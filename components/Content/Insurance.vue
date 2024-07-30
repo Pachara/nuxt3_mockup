@@ -10,8 +10,8 @@
 </script>
 
 <template>
-  <div class="d-flex justify-content-center bg-car-insurance px-2">
-    <div class="row d-flex justify-content-center set-max-width w-100 bg-car-insurance">
+  <div class="d-flex justify-content-center bg-car-insurance">
+    <div class="row d-flex justify-content-center set-max-width w-100 bg-car-insurance ms-0 me-0">
         <div class="col-12">
           </div>
         <div class="col-md-4 col-12 d-flex align-items-center justify-content-center">
@@ -40,21 +40,26 @@
         <div class="col-md-8 col-12 d-flex align-items-center justify-content-center p-0">
           <div class="w-100 bg-car-insurance h-100 " style="min-height:500px;">
             <div class="row">
-              <div class="col-12 p-0 ">
-               
-                <div class="background " >
-                  <div class="background-content p-3">
-                    <h2 class="position-absolute" style="font-size:3em;">กรณีเกิดเหตุ</h2>
-                  </div>
-                    
-                </div>
-              </div>
-              <div class="col-12 p-3 position-relative">
-                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">01 รอเจ้าหน้าที่ประกันภัย</h2>
-                <p class="text-333 position-relative pt-1" style="line-height:20px;">
+              <div class="col-12 p-3 bg-333 text-white" ><h2 class="p-0 m-0 " style="font-size:3em;">กรณีเกิดอุบัติเหตุ </h2></div>
+              <div class="col-12 p-0 border">
+                  <img :src="`${config.public.baseURL}/images/car_insurance3.jpg`" class="img-fluid">
+                  <div class="p-3 position-relative" style="background:#CFBEAC">
+                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">01 รีบติดต่อเจ้าหน้าที่ของเรา</h2>
+                <p class="text-333 position-relative p-1 pb-0 mb-0" style="line-height:20px;">
                   เมื่อเกิดอุบัติเหตุ เจ้าหน้าที่ประกันภัยของเราจะมาถึงที่เกิดเหตุโดยเร็ว เพื่อประเมินสถานการณ์และเก็บข้อมูล ระหว่างรอ โปรดอยู่ในที่ปลอดภัยและปฏิบัติตามคำแนะนำของเจ้าหน้าที่ ทีมงานของเราจะบันทึกหลักฐานและประสานงานกับทุกฝ่าย เพื่อปกป้องสิทธิของท่าน
                 </p>
               </div>
+              </div>
+              <div class="col-12 p-0 border">
+                  <img :src="`${config.public.baseURL}/images/car_insurance7.jpg`" class="img-fluid">
+                  <div class="p-3 position-relative" style="background:#CFBEAC">
+                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">02 รอเจ้าหน้าที่ประกันภัย</h2>
+                <p class="text-333 position-relative p-1 pb-0 mb-0" style="line-height:20px;">
+                  เมื่อเกิดอุบัติเหตุ เจ้าหน้าที่ประกันภัยของเราจะมาถึงที่เกิดเหตุโดยเร็ว เพื่อประเมินสถานการณ์และเก็บข้อมูล ระหว่างรอ โปรดอยู่ในที่ปลอดภัยและปฏิบัติตามคำแนะนำของเจ้าหน้าที่ ทีมงานของเราจะบันทึกหลักฐานและประสานงานกับทุกฝ่าย เพื่อปกป้องสิทธิของท่าน
+                </p>
+              </div>
+              </div>
+              
               <div class="col-12 p-0 ">
                 <div class="background4 " >
                   <div class="background-content p-3">
@@ -111,4 +116,21 @@
 .set-max-width {
   max-width: 1024px;
 }
+@media (max-width: 480px) {
+
+  .responsive-h2 {
+    font-size:0.7em !important;
+    padding:10px !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+  }
+
+
+
+}
+
+
+
+
+
 </style>
