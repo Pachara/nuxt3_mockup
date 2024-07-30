@@ -21,7 +21,7 @@
                 <p class="text-333" style="line-height:20px;">เมื่อเช่ารถกับเรา คุณสามารถขับขี่ได้อย่างมั่นใจด้วยประกันภัยที่ครอบคลุม ในกรณีเกิดอุบัติเหตุ คุณไม่ต้องกังวล เพราะเรามีบริการช่วยเหลือฉุกเฉิน 24 ชั่วโมงพร้อมดูแลคุณทุกสถานการณ์ ไม่ว่าจะเป็นการซ่อมแซมรถ การจัดหารถทดแทน หรือการประสานงานกับคู่กรณี เราดูแลทุกขั้นตอนเพื่อให้คุณเดินทางต่อได้อย่างราบรื่น </p>
               </div>
               <div class="col-12 px-3">
-                <nuxt-img :src="`${config.public.baseURL}/images/car_insurance2.png`"  class="img-fluid"/>
+                <img :src="`${config.public.baseURL}/images/car_insurance1.jpg`"  class="img-fluid"/>
               </div>
               <div class="col-12 p-3 ">
                 <h2 class="text-333" style="font-size:1.5em;">01 โทรหาเจ้าหน้าที่เรา</h2>
@@ -37,7 +37,7 @@
           <div class="w-100 bg-car-insurance p-3 h-100" style="min-height:500px;">
             <div class="row ">
               <div class="col-12 px-3">
-                <nuxt-img :src="`${config.public.baseURL}/images/car_insurance1.jpg`"  class="img-fluid"/>
+                <img :src="`images/car_insurance3.png`"  class="img-fluid"/>
               </div>
               <div class="col-12 p-3 position-relative">
                 <h2 class="text-333" style="font-size:1.5em;">02 รอเจ้าหน้าที่ประกันภัย</h2>
@@ -46,7 +46,7 @@
                 </p>
               </div>
               <div class="col-12 px-3">
-                <nuxt-img :src="`${config.public.baseURL}/images/car_insurance1.jpg`"  class="img-fluid"/>
+                <img :src="`images/car_insurance4.png`"  class="img-fluid"/>
               </div>
               <div class="col-12 p-3 position-relative">
                 <h2 class="text-333" style="font-size:1.5em;">01 โทรหาเจ้าหน้าที่เรา</h2>
@@ -75,7 +75,7 @@
                 </p>
               </div>
               <div class="col-12 px-3">
-                <nuxt-img :src="`${config.public.baseURL}/images/car_insurance1.jpg`"  class="img-fluid"/>
+                <img :src="`images/car_insurance5.png`"  class="img-fluid"/>
               </div>
               
             </div>
