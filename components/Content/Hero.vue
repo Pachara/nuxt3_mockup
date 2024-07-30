@@ -90,9 +90,7 @@ const images = ref([
   height: 80px;
 }
 
-.bg-carpluz-light {
-  background: #F1EFE7 !important;
-}
+
 
 .car-zone {
   padding-left: 30px;

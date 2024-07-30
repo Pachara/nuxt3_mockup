@@ -10,6 +10,15 @@
 .bg-orange{
     background: #F19F10 !important
 }
+.bg-carpluz-light {
+    background: #F1EFE7 !important;
+  }
+.bg-light-green{
+    background: #92D6B3 !important;
+}
+.bg-car-insurance{
+    background: #F7EAD3 !important;
+}
 .text-000 { color: #000 !important; }
 .text-111 { color: #111 !important; }
 .text-222 { color: #222 !important; }
