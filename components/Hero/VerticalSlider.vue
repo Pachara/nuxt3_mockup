@@ -92,5 +92,8 @@ onMounted(() => {
     .splide{
   margin:auto;
 }
+.splide__list{
+  width:75%
+}
 }
 </style>

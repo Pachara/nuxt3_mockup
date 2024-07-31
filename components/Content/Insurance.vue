@@ -4,7 +4,7 @@
 
 <template>
   <div class="d-flex justify-content-center ">
-    <div class="row set-max-width g-0">
+    <div class="row set-max-width g-0  rounded-3 overflow-hidden">
       <div class="col-md-4 col-12 d-flex align-items-start justify-content-center p-2 pt-1 pb-1">
           <div class="row bg-light-green h-100 border">
             <div class="col-12 padding-added">
