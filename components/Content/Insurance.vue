@@ -100,8 +100,8 @@
             <div class="col-6 p-0 border">
               <img :src="`${config.public.baseURL}/images/car_insurance4.png`" class="img-fluid">
               <div class="p-3 position-relative" style="background:#CFBEAC">
-                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;"><span
-                    class="d-inline-block bg-danger px-2 rounded-3 text-white">ผิด</span> กรณีท่านเป็นฝ่ายผิด</h2>
+                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">กรณีท่านเป็น <span
+                    class="d-inline-block bg-danger px-1 rounded-3 text-white">ฝ่ายผิด</span></h2>
                 <p class="text-333 position-relative p-0 pt-1 pb-0 mb-0" style="line-height:20px;">
                   หากท่านเป็นฝ่ายผิด ท่านรับผิดชอบค่าเสียหายส่วนแรก <span class="text-danger fw-bold">3,000 บาท</span>
                   เราจะจัดการเคลมประกันและจัดหารถทดแทนให้ทันที โดยไม่มีค่าใช้จ่ายเพิ่มเติม
@@ -113,8 +113,8 @@
             <div class="col-6 p-0 border">
               <img :src="`${config.public.baseURL}/images/car_insurance5.png`" class="img-fluid">
               <div class="p-3 position-relative" style="background:#CFBEAC">
-                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;"><span
-                    class="d-inline-block bg-success px-2 rounded-3 text-white">ถูก</span> กรณีท่านเป็นฝ่ายถูก</h2>
+                <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;"> กรณีท่านเป็น <span
+                    class="d-inline-block bg-success px-1 rounded-3 text-white">ฝ่ายถูก</span></h2>
                 <p class="text-333 position-relative p-0 pt-1 pb-0 mb-0" style="line-height:20px;">
                   หากท่านเป็นฝ่ายถูก ท่านไม่ต้องรับผิดชอบค่าเสียหายใดๆ
                   เจ้าหน้าที่จะประสานงานกับตำรวจและประกันคู่กรณีโดยตรง <span
