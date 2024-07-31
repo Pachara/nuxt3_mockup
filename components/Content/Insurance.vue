@@ -12,13 +12,13 @@
 <template>
   <div class="d-flex justify-content-center ">
     <div class="row set-max-width g-0">
-      <div class="col-md-4 col-12 d-flex align-items-start justify-content-center px-2 ">
+      <div class="col-md-4 col-12 d-flex align-items-start justify-content-center p-2 pt-1 pb-1">
           <div class="row bg-light-green h-100 border">
             <div class="col-12 padding-added">
-              <h2 class="m-0 p-0 text-decoration-underline text-success"><span style="font-size:2em;">รถทุกคัน</span>
+              <h2 class="m-0 p-0 text-decoration-underline text-success responsive2"><span style="font-size:2em;">รถทุกคัน</span>
               </h2>
-              <h2 class="text-333 " style="font-size:1.6em;">รวมประกันภัยชั้นหนึ่ง</h2>
-              <p class="text-333 " style="line-height:20px;">เมื่อเช่ารถกับเรา
+              <h2 class="text-333 responsive3" style="font-size:1.6em;">ฟรีประกันภัยชั้นหนึ่ง</h2>
+              <p class="text-333 responsive4" style="line-height:20px;">เมื่อเช่ารถกับเรา
                 คุณสามารถขับขี่ได้อย่างมั่นใจด้วยประกันภัยที่ครอบคลุม ในกรณีเกิดอุบัติเหตุ คุณไม่ต้องกังวล
                 เพราะเรามีบริการช่วยเหลือฉุกเฉิน 24 ชั่วโมงพร้อมดูแลคุณทุกสถานการณ์ ไม่ว่าจะเป็นการซ่อมแซมรถ
                 การจัดหารถทดแทน หรือการประสานงานกับคู่กรณี เราดูแลทุกขั้นตอนเพื่อให้คุณเดินทางต่อได้อย่างราบรื่น </p>
@@ -30,8 +30,8 @@
             </div>
             <div class="col-12 padding-added">
 
-              <h2 class="text-333" style="font-size:1.5em;">รายละเอียดประกันภัย</h2>
-              <p class="text-333 position-relative" style="font-size:1em;z-index:1">
+              <h2 class="text-333 responsive5" style="font-size:1.5em;">รายละเอียดประกันภัย</h2>
+              <p class="text-333 position-relative responsive6" style="font-size:1em;z-index:1">
                 ประกันภัยชั้นหนึ่งของเราครอบคลุมความรับผิดต่อชีวิต ร่างกาย และทรัพย์สินของบุคคลภายนอก
                 รวมถึงความเสียหายต่อตัวรถยนต์ที่เช่า ในกรณีที่เกิดอุบัติเหตุ
                 เราดูแลค่าใช้จ่ายในการซ่อมแซมหรือเปลี่ยนอะไหล่ตามความจำเป็น นอกจากนี้
@@ -43,8 +43,8 @@
             </div>
           </div>
       </div>
-      <div class="col-md-8 col-12  px-2"  style="background:#CFBEAC">
-          <div class="row border">
+      <div class="col-md-8 col-12 p-2 pt-1 pb-1"  >
+          <div class="row  responsive7" >
             <div class="col-md-6 col-12 py-3 bg-333 text-white text-center">
               <h2 class="p-0 m-0 " style="font-size:2.5em;">กรณีเกิดอุบัติเหตุ </h2>
             </div>
@@ -71,11 +71,11 @@
 
               </div>
             </div>
-            <div class="col-6 p-0 border">
-              <img :src="`${config.public.baseURL}/images/car_insurance5.png`" class="img-fluid">
+            <div class="col-md-6 col-12 p-0 border">
+              <img :src="`${config.public.baseURL}/images/car_insurance3.png`" class="img-fluid">
               <div class="p-3 position-relative" style="background:#CFBEAC">
                 <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;"><span
-                    class="d-inline-block bg-dark px-2 rounded-3 text-white">01</span> รีบติดต่อเจ้าหน้าที่</h2>
+                    class="d-inline-block bg-dark px-2 rounded-3 text-white me-1">01</span> รีบติดต่อเจ้าหน้าที่</h2>
                 <p class="text-333 position-relative p-0 pt-1 pb-0 mb-0" style="line-height:20px;">
                   เมื่อเกิดอุบัติเหตุ โปรดแจ้งเจ้าหน้าที่ของเราทันที เราจะส่งทีมงานมาถึงที่เกิดเหตุโดยเร็วที่สุด
                   เพื่อประเมินสถานการณ์และเก็บข้อมูล ระหว่างรอ โปรดอยู่ในที่ปลอดภัยและปฏิบัติตามคำแนะนำของเจ้าหน้าที่
@@ -83,7 +83,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-6 p-0 border">
+            <div class="col-md-6 col-12 p-0 border">
               <img :src="`${config.public.baseURL}/images/car_insurance7.png`" class="img-fluid">
               <div class="p-3 position-relative" style="background:#CFBEAC">
                 <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;"><span
@@ -97,7 +97,7 @@
               </div>
             </div>
             
-            <div class="col-6 p-0 border">
+            <div class="col-md-6 col-12 p-0 border">
               <img :src="`${config.public.baseURL}/images/car_insurance4.png`" class="img-fluid">
               <div class="p-3 position-relative" style="background:#CFBEAC">
                 <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;">กรณีท่านเป็น <span
@@ -110,7 +110,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-6 p-0 border">
+            <div class="col-md-6 col-12 p-0 border">
               <img :src="`${config.public.baseURL}/images/car_insurance5.png`" class="img-fluid">
               <div class="p-3 position-relative" style="background:#CFBEAC">
                 <h2 class="text-333 pb-0 m-0" style="font-size:1.5em;"> กรณีท่านเป็น <span
@@ -191,12 +191,32 @@
   padding-left:30px;
   padding-right:30px;
 }
-.padding-added p{
-  font-size:1.2em !important;
-  line-height:23px !important;
+
+.responsive2{
+  font-size:2.5em;
+  text-align:center;
 }
-
-
+.responsive3{
+  font-size:2.2em !important;
+  text-align:center;
+}
+.responsive4{
+  font-size:1.3em !important;
+  line-height:25px !important;
+}
+.responsive5{
+  font-size:2.1em !important;
+  line-height:25px !important;
+  text-align: center;
+}
+.responsive6{
+  font-size:1.3em !important;
+  line-height:25px !important;
+}
+.responsive7{
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0.5rem;
+}
 
 }
 
