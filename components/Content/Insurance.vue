@@ -187,6 +187,15 @@
     padding-bottom:5px !important;
   }
 
+  .padding-added{
+  padding-left:30px;
+  padding-right:30px;
+}
+.padding-added p{
+  font-size:1.2em !important;
+  line-height:23px !important;
+}
+
 
 
 }
