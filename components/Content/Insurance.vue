@@ -1,12 +1,5 @@
 <script setup>
-
   const config = useRuntimeConfig();
-  const images = [
-    { src: `${config.public.baseURL}/images/car_step/1.png`, alt: "Car Step 1" },
-    { src: `${config.public.baseURL}/images/car_step/2.png`, alt: "Car Step 2" },
-    { src: `${config.public.baseURL}/images/car_step/3.png`, alt: "Car Step 3" },
-    { src: `${config.public.baseURL}/images/car_step/4.png`, alt: "Car Step 4" }
-  ];
 </script>
 
 <template>
