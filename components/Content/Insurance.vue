@@ -137,39 +137,13 @@
     width:40px;
     height:40px;
   }
-.background {
-  background-image: url('/images/car_insurance3.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 0;
-  padding-top:65%; /* Aspect ratio 16:9 */
-  position: relative;
-}
-.background4 {
-  background-image: url('/images/car_insurance4.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 0;
-  padding-top:65%; /* Aspect ratio 16:9 */
-  position: relative;
-}
-.background-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+
 .padding-added{
   padding-left:50px;padding-right:50px;padding-top:30px;
   padding-bottom:30px;
 }
 .set-max-width {
-  max-width: 960px;
+  max-width: 1024px;
 }
 @media (max-width: 480px) {
 
