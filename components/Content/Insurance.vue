@@ -38,10 +38,10 @@
       </div>
       <div class="col-md-8 col-12 p-2 pt-1 pb-1"  >
           <div class="row  responsive7" >
-            <div class="col-md-6 col-12 py-3 bg-333 text-white text-center">
+            <div class="col-md-6 col-12 py-3 bg-333 text-white text-center ">
               <h2 class="p-0 m-0 " style="font-size:2.5em;">กรณีเกิดอุบัติเหตุ </h2>
             </div>
-            <div class="col-md-6 col-12 py-3 bg-333 text-white">
+            <div class="col-md-6 col-12 py-3 bg-333 text-white g-0">
               <div class="d-flex justify-content-center align-items-center w-100 h-100">
 
                 <!-- Call Button -->
@@ -186,11 +186,11 @@
 }
 
 .responsive2{
-  font-size:2.5em;
+  font-size:2.2em;
   text-align:center;
 }
 .responsive3{
-  font-size:2.2em !important;
+  font-size:2em !important;
   text-align:center;
 }
 .responsive4{
