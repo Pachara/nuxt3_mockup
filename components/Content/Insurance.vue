@@ -14,7 +14,7 @@
     <div class="row set-max-width g-0">
       <div class="col-md-4 col-12 d-flex align-items-start justify-content-center px-2 ">
           <div class="row bg-light-green h-100 border">
-            <div class="col-12 padding-added " style="padding-bottom: 0 !important;">
+            <div class="col-12 padding-added">
               <h2 class="m-0 p-0 text-decoration-underline text-success"><span style="font-size:2em;">รถทุกคัน</span>
               </h2>
               <h2 class="text-333 " style="font-size:1.6em;">รวมประกันภัยชั้นหนึ่ง</h2>
