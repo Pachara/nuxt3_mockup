@@ -36,7 +36,7 @@ const images = ref([
               alt="Company Logo"
             />
           </div>
-          <div class="col-md-4 col-6 d-flex align-items-center justify-content-end order-2 order-md-3 pe-4">
+          <div class="col-md-4 col-6 d-flex align-items-center justify-content-end order-2 order-md-3 pe-2">
             <HeroCallZone />
           </div>
           <div class="col-md-5 col-12 d-flex align-items-center justify-content-start order-3 order-md-2">

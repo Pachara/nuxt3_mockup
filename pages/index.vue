@@ -8,8 +8,9 @@
     <LazyContentSlowgan />
     <LazyContentHowToRent />
     <LazyContentCustomerReview />
-   
     <LazyContentInsurance />
+    <LazyContentSlowgan />
+    <LazyContentFooter />
   </div>
 </template>
 

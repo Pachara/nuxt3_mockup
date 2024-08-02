@@ -51,7 +51,7 @@
                                         <div class="fw-bold mb-2" style="font-size:2.5em;">
                                             <span class="d-inline-block bg-dark text-white p-1 pt-0 pb-0 rounded-3">
                                                 {{ steps[1].number }}</span>
-                                            {{ steps[1].title }}
+                                           {{ steps[1].title }}
                                         </div>
                                         <p class="fw-normal m-0" style="line-height:20px;">
                                             {{ steps[1].description }}
