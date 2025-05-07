@@ -37,7 +37,7 @@ jobs:
       - name: Sync source files to server
         run: rsync -av --delete --exclude='.git*' --exclude='node_modules' --exclude='.output' -e "ssh -p ${{ secrets.SSH_PORT }}" ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/orixme/domains/test.toca.in.th/nuxt3_temp
 
-      - name: Install dependencies and build on server
+      - name: Install dependencies and build on server 
         run: |
           ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} '
             cd /home/orixme/domains/test.toca.in.th/nuxt3_temp
