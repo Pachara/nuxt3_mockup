@@ -10,7 +10,7 @@
     <LazyContentCustomerReview />
     <LazyContentInsurance />
     <LazyContentSlowgan />
-    <LazyContentFooter />
+    <LazyContentFooter /> 
   </div>
 </template>
 
