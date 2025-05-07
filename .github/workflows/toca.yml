@@ -1,0 +1,68 @@
+name: Deploy Nuxt 3 to VPS TOCA TEST
+
+on:
+  push:
+    branches:
+      - main  # Change 'main' to your default branch if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Bun
+        run: |
+          curl -fsSL https://bun.sh/install | bash
+          echo "BUN_INSTALL_DIR=$HOME/.bun" >> $GITHUB_ENV
+          echo "PATH=$HOME/.bun/bin:$PATH" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Install dependencies
+        run: bun install --force
+
+      - name: Build Nuxt 3 project
+        run: bun run build
+
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }} 
+
+      - name: Add host key to known_hosts
+        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+      - name: Sync source files to server
+        run: rsync -av --delete --exclude='.git*' --exclude='node_modules' --exclude='.output' -e "ssh -p ${{ secrets.SSH_PORT }}" ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/orixme/domains/test.toca.in.th/nuxt3_temp
+
+      - name: Install dependencies and build on server
+        run: |
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} '
+            cd /home/orixme/domains/test.toca.in.th/nuxt3_temp
+            bun install --force
+            bun run build
+            chmod -R 755 .output
+          '
+
+      - name: Swap directories
+        run: |
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} '
+            mv /home/orixme/domains/test.toca.in.th/nuxt3 /home/orixme/domains/test.toca.in.th/nuxt3_old
+            mv /home/orixme/domains/test.toca.in.th/nuxt3_temp /home/orixme/domains/test.toca.in.th/nuxt3
+            rm -rf /home/orixme/domains/test.toca.in.th/nuxt3_old 
+          '
+        
+      - name: Kill Old Process
+        run: |
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} 'lsof -ti:3009 | xargs --no-run-if-empty kill -9'
+
+ 
+      - name: Start Nuxt 3 application with NODE
+        run: |
+          ssh -f -p ${{ secrets.SSH_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} '
+            cd /home/orixme/domains/test.toca.in.th/nuxt3
+            export PORT=3009
+            nohup node .output/server/index.mjs --port 3009 > public/nuxt.log 2>&1 &
+          '

@@ -6,8 +6,8 @@
     <div class="rounded-3 w-100 p-3 position-relative">
       <div class="pb-0 d-flex">
         <div class="p-1 pe-3" >
-          <div class="border rounded-circle" style="width:150px;height:150px;">
-              <nuxt-img :src="`${config.public.baseURL}/images/profile/profile.png`" />
+          <div class="border rounded-circle overflow-hidden" style="width:150px;height:150px;">
+              <nuxt-img :src="`${config.public.baseURL}/images/profile/profile.jpg`" class="img-fluid" />
           </div>
         </div>
         <div>
