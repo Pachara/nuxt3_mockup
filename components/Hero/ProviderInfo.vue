@@ -4,13 +4,16 @@
 </script>
 <template>
     <div class="rounded-3 w-100 p-3 position-relative">
-      <div class="pb-0 d-flex">
-        <div class="p-1 pe-3" >
+      <div class="pb-0  row">
+
+
+        <div class="col-12 col-sm-4 p-1 pe-3 d-flex align-items-center justify-content-center" >
           <div class="border rounded-circle overflow-hidden" style="width:150px;height:150px;">
               <nuxt-img :src="`${config.public.baseURL}/images/profile/profile.jpg`" class="img-fluid" />
           </div>
         </div>
-        <div>
+
+        <div class="col-12 col-sm-8">
         <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
           <span class="badge rounded-pill text-bg-warning me-2 d-flex" style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
             Premium Provider
