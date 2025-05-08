@@ -7,21 +7,21 @@
       <div class="pb-0  row">
 
 
-        <div class="col-12 col-sm-4 p-1 pe-3 d-flex align-items-center justify-content-center" >
+        <div class="col-12 col-md-4 p-1 pe-3 d-flex align-items-center justify-content-center" >
           <div class="border rounded-circle overflow-hidden" style="width:150px;height:150px;">
               <nuxt-img :src="`${config.public.baseURL}/images/profile/profile.jpg`" class="img-fluid" />
           </div>
         </div>
 
-        <div class="col-12 col-sm-8">
-        <p class="d-flex align-items-center" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
+        <div class="col-12 col-md-8 text-center text-md-start">
+        <p class="d-flex align-items-center justify-content-center justify-content-md-start" style="margin:0;padding:0;font-size:0.9em;margin-bottom:3px;">
           <span class="badge rounded-pill text-bg-warning me-2 d-flex" style="font-size:0.6em;margin-left:-5px;border:1px solid black;padding-top:3px;padding-bottom:3px;">
             Premium Provider
           </span>
         </p>
         <h1 class="h1-media fw-bold p-0 m-0 me-1">เจ้าฟ้า คาร์เร้น</h1>
         <p class="keyword-media fw-light mb-1">#รถเช่านครศรีธรรมราช #รถเช่าสนามบิน</p>
-        <p class="text-bigger fs-5 d-flex">
+       <p class="text-bigger fs-5 d-flex justify-content-center justify-content-md-start">
           <span class="d-flex align-items-center border rounded-3 p-1 me-1 bg-info text-white">
             <i class="bi bi-facebook"></i>
             <span class="fs-5 ps-1 pe-1">1,200 Likes</span>
@@ -32,6 +32,7 @@
           </span>
         </p>
         </div>
+
       </div>
 
       <p class="content-media fw-light m-0 pt-0">
