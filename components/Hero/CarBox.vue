@@ -7,11 +7,9 @@
         <div class="col-12 bg-light p-2">
           <div class="row">
             <div class="col-6">
-              <span style="padding-left:2px;"><i class="bi bi-geo-alt-fill"></i> รับรถที่จังหวัด</span>
-              <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">
-                นครศรีธรรมราช
-              </div>
-            </div>
+            <span style="padding-left:2px;" ><i class="bi bi-geo-alt-fill"></i> รับรถที่จังหวัด</span>
+            <ProvinceSelect v-model="selectedProvince" :options="provinces"  style="margin-top:2px;" />
+          </div>
             <div class="col-3">
               <span style="padding-left:2px;"><i class="bi bi-calendar3"></i> รับรถ</span>
               <div class="border rounded-3 p-2 bg-dark text-primary" style="margin-top:2px;">14 ม.ย.</div>
@@ -64,6 +62,12 @@
   </template>
   
   <script setup>
+  const provinces = [
+  'กรุงเทพมหานคร', 'เชียงใหม่', 'ขอนแก่น', 'ชลบุรี', 'ภูเก็ต',
+  'นครราชสีมา', 'นครศรีธรรมราช', 'อุบลราชธานี', 'สงขลา', 'สุราษฎร์ธานี'
+]
+
+const selectedProvince = ref('นครศรีธรรมราช')
   </script>
   
   <style scoped>
